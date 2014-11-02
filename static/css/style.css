@@ -1,0 +1,62 @@
+.houtai-nav {
+}
+.houtai-nav .navbar {
+min-height: 40px;
+max-height: 45px;
+}
+.navbar {
+min-height:0px;
+max-height: 45px;
+}
+.houtai-nav.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+color: #ffffff;
+background-color: #2863A3;
+}
+.houtai {
+position: relative;
+margin-top: 65px;
+}
+.houtai .well {
+background-color: #FFFFFF;
+border-radius: 0px;
+box-shadow: 2px 0 5px rgba(214, 214, 215, 0.9), -2px 0 5px rgba(214, 214, 215, 0.9);
+}
+.houtai h1, h2, h3 {
+margin-top: 0px;
+}
+.houtai .form-control {
+border-radius: 0px;
+}
+.left-nav {
+}
+.left-nav .list-group-item:first-child {
+border-top-right-radius: 0px;
+border-top-left-radius: 0px;
+}
+.left-nav .list-group-item {
+padding: 7px 15px;
+}
+.left-nav .list-group-item:last-child {
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+.tap {
+padding:0px;
+margin-bottom: 3px;
+}
+.tap-type {
+}
+.tap-type .form-control {
+height: 24px;
+}
+.tap-type h5 {
+margin-top: 5px;
+margin-bottom: 0px;
+}
+.tap-chose {
+margin-top: 3px;
+}
+.houtai hr {
+margin-top: 1px;
+margin-bottom: 1px;
+}

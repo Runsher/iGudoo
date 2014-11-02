@@ -1,0 +1,33 @@
+{% include "layout/top.html" %}
+<body style="background-color: #f0f0f0">
+   {% include "layout/header.html" %}
+<div class="container-fluid houtai">
+    <div class=col-sm-2>
+        {% include "layout/left-nav-postslist.html" %}
+    </div>
+    <div id="postlist"class="col-sm-8 well">
+		<div class="panel panel-default">
+  		   <div class="panel-heading">文章列表</div>
+  		   <div class="panel-body">
+			<div class="list-group">
+			{% for i,j,k in listposts %}
+  			<a href="/post/{{escape(i)}}" class="list-group-item">
+    			<h4 class="list-group-item-heading">{{escape(i)}}</h4>
+			<h6>{{escape(str(k))}}</h6>
+    			<p class="list-group-item-text">{{ escape(j) }}</p>
+  			</a>
+			{% end %}
+			</div>
+			<!--div class="media">
+  			<a class="media-left" href="#">
+    			<img src="..." alt="...">
+  			</a>
+  			<div class="media-body">
+    			<h4 class="media-heading">Media heading</h4>
+    			...
+  			</div>
+			</div-->
+  		   </div>
+		   </div>
+    </div>
+</div>

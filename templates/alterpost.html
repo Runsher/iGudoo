@@ -1,0 +1,85 @@
+<h5>文章修改</h5>
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color=#987cb9 SIZE=3>
+<h4>标题</h4>
+<div class="row">
+    <div class="col-sm-6">
+        <input id="title" type=">text" class="form-control" placeholder="{{ title }}">
+    </div>
+</div>
+<h4>标签</h4>
+<div class="row tap">
+    <div class="col-sm-6">
+<div  class="col-sm-6 tap tap-chose">
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> 原创
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> 首发
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"> 转载
+</label>
+</div>
+<div class="col-sm-6 tap tap-type">
+    <div class="col-sm-4 tap">
+<h5>内容分类:</h5>
+    </div>
+    <div class="col-sm-6 tap">
+<select class="form-control">
+  <option>一碗鸡汤</option>
+  <option>吐啊吐</option>
+  <option>喜闻乐见</option>
+  <option>道听途说</option>
+  <option>故事里的故事</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<!--div class="sunote" id="summernote">Hello Summernote</div-->
+<div  id="summernote" class="sunote">{% raw postinfo %}</div>
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color=#987cb9 SIZE=3>
+<h4>简介</h4>
+<div class="row">
+<div class=col-sm-6>
+<textarea id="content"  name="content" class="form-control" rows="3"> {{ shortcut }}</textarea>
+</div>
+</div>
+
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color=#987cb9 SIZE=3>
+<button id="createPost" type="button" class="btn btn-success">文章预览</button>
+<script>
+$('.sunote').summernote({
+  height: 300,                 // set editor height
+
+  minHeight: null,             // set minimum height of editor
+  maxHeight: null,             // set maximum height of editor
+
+  focus: true,                 // set focus to editable area after initializing summernote
+  toolbar: [
+    //[groupname, [button list]]
+
+    ['style', ['style','bold', 'italic', 'underline', 'clear']],
+    ['font', ['strikethrough']],
+    ['fontsize', ['fontsize']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['height', ['height']],
+    ['insert',['picture','link','hr']],
+    ['misc',['fullscreen','codeview']],
+  ]
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#createPost").click(function(){
+var title=$("#title").val();
+var inline1=$("#inlineRadio1").val();
+var sHTML = $("#summernote").code();
+var shortcut = $("#content").val();
+$.post("/createPost",{title:title,inline1:inline1,sHTML:sHTML,shortcut:shortcut},function(res){
+$("#makePost").html(res);
+});
+});
+});
+</script>
