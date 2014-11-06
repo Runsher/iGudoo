@@ -28,8 +28,12 @@ if __name__ == '__main__':
                 handlers=[
                         (r'/',Home.IndexHandler),
                         (r'/createPost',CreatePost.CreatePostHandler),
+                        (r'/createExistPost',CreatePost.CreateExistPostHandler),
                         (r'/savePost',CreatePost.SavePostHandler),
+                        (r'/saveExistPost',CreatePost.SaveExistPostHandler),
                         (r'/alterPost',CreatePost.AlterPostHandler),
+                        (r'/alterExistPost',CreatePost.AlterExistPostHandler),
+                        (r'/delPost',CreatePost.DelPostHandler),
                         (r'/getPostList',CreatePost.ListPostHandler),
                         (r'/post/(.*)',CreatePost.ViewPostHandler),
                       #  (r'/f/(.*)',Home.TopHandler),

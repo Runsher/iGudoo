@@ -1,0 +1,32 @@
+
+<div id="alterpostfile">
+<div  class="btn-group-sm pull-right">
+  <!--button id="savepost" type="button" class="btn btn-info">保存</button-->
+  <button id="alterpost"type="button" class="btn btn-info">修改</button>
+  <button id="deletepost" type="button" class="btn btn-info">删除</button>
+</div>
+<h5>文章预览</h5>
+<div id="postid">{{ escape(str(postid)) }}</div>
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1) margin-bottom=5px" width="100%" color=#987cb9 SIZE=3>
+<h4>{{ escape(title) }}</h4>
+<div id="result" type="text">{% raw postinfo %}</div>
+</div>
+<script>
+$(document).ready(function(){
+$("#alterpost").click(function(){
+$.post("/alterExistPost",function(res){
+$("#alterpostfile").html(res)
+});
+});
+$("#deletepost").click(function(){
+//var postid=$("#postid").val;
+//$.post("/delPost",{postid:postid},function(res){
+//$("#result").html("文章删除成功")
+$.post("/delPost",function(res){
+$("#result").html("文章删除成功")
+});
+});
+
+//window.location.href="/"
+});
+</script>
