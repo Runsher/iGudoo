@@ -8,14 +8,16 @@ import os
 import tornado.ioloop
 import tornado.web
 import Home
+import Login
+import User
 import CreatePost
 
 from tornado.options import define, options
 define("port", default = 8824, help = "run on the given port", type = int)
 
 settings = {
-        #"cookie_secret" : "61oETzKXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
-        #"login_url"     : "/login",
+        "cookie_secret" : "61oEyeqXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",
+        "login_url"     : "/login",
         "static_path"   : os.path.join(os.path.dirname(__file__), "static"),
         "template_path" : os.path.join(os.path.dirname(__file__), "templates"),
         #"xsrf_cookies"  : True,
@@ -27,6 +29,8 @@ if __name__ == '__main__':
         app=tornado.web.Application(
                 handlers=[
                         (r'/',Home.IndexHandler),
+                        (r'/login',Login.LoginHandler),
+                        (r'/user',User.IndexHandler),
                         (r'/createPost',CreatePost.CreatePostHandler),
                         (r'/createExistPost',CreatePost.CreateExistPostHandler),
                         (r'/savePost',CreatePost.SavePostHandler),

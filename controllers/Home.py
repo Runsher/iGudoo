@@ -5,22 +5,27 @@ import tornado.httpserver
 import tornado.web
 import tornado.options
 import tornado.ioloop
-#from MySQL import MysqlQuery
+import MongoConn
 
-reload(sys)
-sys.setdefaultencoding("utf8")
+dbconn = MongoConn.DBConn()
+conn = None
 
 class BaseHandler(tornado.web.RequestHandler):
     def get_current_user(self):
-#                return self.get_secure_cookie("user")
-        pass
+     	return self.get_secure_cookie("user")
 
 class IndexHandler(BaseHandler):
-        #@tornado.web.authenticated
+    @tornado.web.authenticated
     def get(self):
-                #name = tornado.escape.xhtml_escape(self.current_user)
-                #self.render('index.html',username=name)
-        self.render('index.html')
+       	name = tornado.escape.xhtml_escape(self.current_user)
+      	dbconn.connect()
+     	conn = dbconn.getConn()
+      	userInfo = conn.iGudoo_Admin.userInfo
+      	userLevel = userInfo.find({"name":name})[0]['level']
+     	conn.close()
+      	currentInfo = []
+      	self.render('index.html',userLevel=userLevel,userName=name)
+        #self.render('index.html')
 
 class TopHandler(BaseHandler):
     pass

@@ -3953,3 +3953,89 @@ SyntaxError: name 'postid' is local and global
 [I 141106 21:16:19 web:1811] 304 GET / (10.10.65.73) 17.60ms
 [I 141106 21:16:20 web:1811] 304 GET /getPostList (10.10.65.73) 13.68ms
 [I 141106 21:16:21 web:1811] 304 GET / (10.10.65.73) 20.80ms
+[I 141106 21:49:17 web:1811] 304 GET /getPostList (10.10.65.73) 13.39ms
+[I 141106 21:49:18 web:1811] 304 GET /getPostList (10.10.65.73) 14.09ms
+[I 141106 21:49:18 web:1811] 304 GET /getPostList (10.10.65.73) 14.66ms
+[W 141106 21:49:18 web:1811] 404 GET /favicon.ico (10.10.65.73) 3.71ms
+[W 141106 21:49:18 web:1811] 404 GET /favicon.ico (10.10.65.73) 1.86ms
+[I 141106 21:49:19 web:1811] 304 GET /getPostList (10.10.65.73) 14.04ms
+[I 141106 21:49:19 web:1811] 304 GET /getPostList (10.10.65.73) 14.70ms
+[I 141106 21:49:19 web:1811] 304 GET /getPostList (10.10.65.73) 14.08ms
+[I 141106 21:49:19 web:1811] 304 GET /getPostList (10.10.65.73) 14.84ms
+[I 141106 21:49:20 web:1811] 304 GET /getPostList (10.10.65.73) 13.95ms
+[I 141106 21:49:20 web:1811] 304 GET /getPostList (10.10.65.73) 14.32ms
+[I 141106 21:49:21 web:1811] 304 GET /getPostList (10.10.65.73) 13.50ms
+[I 141106 21:49:21 web:1811] 304 GET /getPostList (10.10.65.73) 12.56ms
+[I 141106 21:49:21 web:1811] 304 GET /getPostList (10.10.65.73) 14.35ms
+[I 141106 21:49:21 web:1811] 304 GET /getPostList (10.10.65.73) 13.63ms
+[I 141106 21:49:22 web:1811] 304 GET /getPostList (10.10.65.73) 13.24ms
+[I 141106 21:49:22 web:1811] 304 GET /getPostList (10.10.65.73) 14.04ms
+[I 141106 21:49:22 web:1811] 304 GET /getPostList (10.10.65.73) 13.53ms
+[I 141106 21:49:23 web:1811] 304 GET /getPostList (10.10.65.73) 13.17ms
+[I 141106 21:49:23 web:1811] 304 GET /getPostList (10.10.65.73) 13.00ms
+[I 141106 21:52:25 web:1811] 304 GET / (10.10.65.73) 16.47ms
+[I 141107 12:20:45 web:1811] 304 GET / (10.10.65.73) 17.31ms
+Traceback (most recent call last):
+  File "application.py", line 45, in <module>
+    http_server.listen(options.port)
+  File "/usr/lib64/python2.6/site-packages/tornado/tcpserver.py", line 125, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/usr/lib64/python2.6/site-packages/tornado/netutil.py", line 145, in bind_sockets
+    sock.bind(sockaddr)
+  File "<string>", line 1, in bind
+socket.error: [Errno 98] Address already in use
+[I 141107 16:45:23 web:1811] 304 GET / (10.10.65.73) 16.43ms
+[I 141107 16:45:27 web:1811] 304 GET / (10.10.65.73) 16.34ms
+[I 141107 16:46:57 web:1811] 200 POST /createPost (10.10.65.73) 8.93ms
+[I 141107 16:47:00 web:1811] 200 POST /savePost (10.10.65.73) 3.47ms
+[I 141107 16:48:17 web:1811] 304 GET / (10.10.65.73) 16.86ms
+[I 141107 16:48:18 web:1811] 200 GET /getPostList (10.10.65.73) 15.56ms
+[I 141107 16:48:21 web:1811] 304 GET / (10.10.65.73) 21.02ms
+[I 141107 16:49:42 web:1811] 200 POST /createPost (10.10.65.73) 42.39ms
+[I 141107 16:49:44 web:1811] 200 POST /savePost (10.10.65.73) 3.41ms
+[I 141107 16:49:46 web:1811] 304 GET / (10.10.65.73) 18.59ms
+[I 141107 16:49:47 web:1811] 200 GET /getPostList (10.10.65.73) 16.40ms
+[I 141107 16:49:57 web:1811] 304 GET / (10.10.65.73) 18.19ms
+[I 141107 16:50:41 web:1811] 200 POST /createPost (10.10.65.73) 35.21ms
+[I 141107 16:50:42 web:1811] 200 POST /savePost (10.10.65.73) 3.17ms
+[I 141107 16:50:44 web:1811] 200 GET /getPostList (10.10.65.73) 15.12ms
+[I 141107 21:26:27 web:1811] 200 GET /getPostList (10.10.65.73) 18.40ms
+[I 141107 21:26:28 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.56ms
+[I 141107 21:26:28 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.45ms
+[I 141107 21:26:28 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.88ms
+[I 141107 21:26:30 web:1811] 304 GET /getPostList (10.10.65.73) 13.93ms
+[I 141107 21:43:57 web:1811] 304 GET / (10.10.65.73) 15.84ms
+[I 141107 21:46:20 autoreload:191] application.py modified; restarting server
+Traceback (most recent call last):
+  File "application.py", line 30, in <module>
+    (r'/login',Login.LoginHandler),
+NameError: name 'Login' is not defined
+[I 141108 19:50:59 web:1811] 304 GET /getPostList (10.10.65.73) 28.57ms
+[I 141108 19:50:59 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 3.07ms
+[I 141108 19:50:59 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.44ms
+[I 141108 19:50:59 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.91ms
+[I 141108 19:51:03 web:1811] 304 GET /post/545cd264d8aadf1580ffc3fb (10.10.65.73) 19.48ms
+[I 141108 19:51:05 web:1811] 200 POST /delPost (10.10.65.73) 3.30ms
+[I 141108 19:51:06 web:1811] 200 GET /getPostList (10.10.65.73) 16.14ms
+[I 141108 19:55:03 web:1811] 200 GET / (10.10.65.73) 22.54ms
+[I 141108 19:55:03 web:1811] 200 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.81ms
+[I 141108 19:55:03 web:1811] 200 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.52ms
+[W 141108 19:55:04 web:1811] 404 GET /apple-touch-icon-precomposed.png (10.10.65.73) 2.70ms
+[W 141108 19:55:04 web:1811] 404 GET /apple-touch-icon.png (10.10.65.73) 0.85ms
+[I 141108 22:33:11 web:1811] 200 GET /post/545c87e2d8aadf51e38da3e2 (10.10.65.73) 18.09ms
+[I 141108 22:33:15 web:1811] 304 GET /getPostList (10.10.65.73) 16.08ms
+[I 141108 22:33:17 web:1811] 200 GET /post/545c8704d8aadf51e38da3e0 (10.10.65.73) 17.78ms
+[I 141108 22:33:19 web:1811] 304 GET /getPostList (10.10.65.73) 16.83ms
+[I 141108 22:33:25 web:1811] 304 GET /post/545c87e2d8aadf51e38da3e2 (10.10.65.73) 19.49ms
+[I 141108 22:33:32 web:1811] 304 GET /getPostList (10.10.65.73) 16.73ms
+[I 141108 22:36:14 web:1811] 304 GET /post/545c87a8d8aadf51e38da3e1 (10.10.65.73) 18.64ms
+[I 141108 22:38:14 web:1811] 304 GET / (10.10.65.73) 22.80ms
+[I 141108 22:39:57 web:1811] 200 POST /createPost (10.10.65.73) 3.52ms
+[I 141108 22:40:00 web:1811] 304 GET / (10.10.65.73) 22.48ms
+[I 141108 22:40:03 web:1811] 304 GET /getPostList (10.10.65.73) 12.03ms
+[I 141108 22:40:05 web:1811] 304 GET / (10.10.65.73) 23.41ms
+[I 141109 17:00:13 web:1811] 304 GET / (10.10.65.73) 23.23ms
+[W 141109 17:00:13 web:1811] 404 GET /favicon.ico (10.10.65.73) 3.73ms
+[I 141109 17:00:14 web:1811] 304 GET / (10.10.65.73) 13.21ms
+[W 141109 17:00:14 web:1811] 404 GET /apple-touch-icon-precomposed.png (10.10.65.73) 1.52ms
+[W 141109 17:00:14 web:1811] 404 GET /apple-touch-icon.png (10.10.65.73) 0.42ms

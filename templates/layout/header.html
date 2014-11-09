@@ -1,4 +1,15 @@
 <nav class="navbar navbar-inverse navbar-fixed-top houtai-nav" role="navigation">
+                <!--div class="dropdown pull-right">
+                        <button class="btn btn-info  dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-star"></span>
+                                {{ userName }}
+                                <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/user">账号管理</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/login">退出>登陆</a></li>
+                        </ul>
+                </div-->
   <div class="container-fluid">
     <div class="navbar-header">
         <a class="navbar-brand" href="#">后台管理系统</a>
@@ -8,6 +19,9 @@
         <ul class="nav navbar-nav">
         <li class="active"><a href="#">发布系统</a></li>
         <li><a href="#">用户管理</a></li>
+	<li class="pull-right">
+	<a>{{ userName }}</a>
+	</li>
         </ul>
     </div>
 </nav>
