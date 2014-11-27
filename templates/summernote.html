@@ -16,9 +16,9 @@
 <label class="radio-inline">
   <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> 原创
 </label>
-<!--label class="radio-inline">
+<label class="radio-inline">
   <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> 首发
-</label-->
+</label>
 <label class="radio-inline">
   <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"> 转载
 </label>
@@ -82,7 +82,8 @@ var title=$("#title").val();
 var inline1=$("#inlineRadio1").val();
 var sHTML = $("#summernote").code();
 var shortcut = $("#content").val();
-$.post("/createPost",{title:title,inline1:inline1,sHTML:sHTML,shortcut:shortcut},function(res){
+var imgurl = $("#imgurl").val();
+$.post("/createPost",{title:title,inline1:inline1,sHTML:sHTML,shortcut:shortcut,imgurl:imgurl},function(res){
 $("#makePost").html(res);
 });
 });

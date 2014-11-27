@@ -4538,3 +4538,36 @@ NameError: name 'Login' is not defined
 [I 141127 10:06:32 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.92ms
 [I 141127 10:06:32 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.58ms
 [I 141127 10:06:32 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 1.40ms
+[I 141127 14:08:07 web:1811] 200 GET / (10.10.65.73) 24.51ms
+[I 141127 14:08:07 web:1811] 200 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 2.36ms
+[I 141127 14:08:07 web:1811] 200 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 1.94ms
+[I 141127 14:08:07 web:1811] 200 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.12ms
+[I 141127 14:08:23 web:1811] 200 GET /getPostList (10.10.65.73) 15.95ms
+[I 141127 14:08:25 web:1811] 304 GET / (10.10.65.73) 25.29ms
+[I 141127 14:40:09 web:1811] 200 GET / (10.10.65.73) 24.51ms
+[I 141127 14:40:09 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.58ms
+[I 141127 14:40:09 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 1.61ms
+[I 141127 14:40:09 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.73ms
+[I 141127 14:43:57 autoreload:191] /ROOT/server/iGodoo/controllers/CreatePost.py modified; restarting server
+[I 141127 14:43:58 web:1811] 200 GET / (10.10.65.73) 40.15ms
+[I 141127 14:43:58 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 3.78ms
+[I 141127 14:43:58 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 1.72ms
+[I 141127 14:43:58 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.41ms
+[W 141127 14:44:14 web:1404] 400 POST /createPost (10.10.65.73): Missing argument inline1
+[W 141127 14:44:14 web:1811] 400 POST /createPost (10.10.65.73) 4.44ms
+[W 141127 14:44:16 web:1404] 400 POST /createPost (10.10.65.73): Missing argument inline1
+[W 141127 14:44:16 web:1811] 400 POST /createPost (10.10.65.73) 2.34ms
+[W 141127 14:45:23 web:1404] 400 POST /createPost (10.10.65.73): Missing argument inline1
+[W 141127 14:45:23 web:1811] 400 POST /createPost (10.10.65.73) 2.49ms
+[W 141127 14:45:24 web:1404] 400 POST /createPost (10.10.65.73): Missing argument inline1
+[W 141127 14:45:24 web:1811] 400 POST /createPost (10.10.65.73) 2.12ms
+[W 141127 14:45:24 web:1404] 400 POST /createPost (10.10.65.73): Missing argument inline1
+[W 141127 14:45:24 web:1811] 400 POST /createPost (10.10.65.73) 2.39ms
+[W 141127 14:45:24 web:1404] 400 POST /createPost (10.10.65.73): Missing argument inline1
+[W 141127 14:45:24 web:1811] 400 POST /createPost (10.10.65.73) 2.19ms
+[I 141127 14:45:25 web:1811] 200 GET / (10.10.65.73) 24.35ms
+[I 141127 14:45:25 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.65ms
+[I 141127 14:45:25 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 1.48ms
+[I 141127 14:45:25 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.77ms
+[I 141127 14:45:36 web:1811] 200 POST /createPost (10.10.65.73) 3.57ms
+[I 141127 14:46:25 web:1811] 200 POST /savePost (10.10.65.73) 1.72ms
