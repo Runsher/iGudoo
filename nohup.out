@@ -4039,3 +4039,502 @@ NameError: name 'Login' is not defined
 [I 141109 17:00:14 web:1811] 304 GET / (10.10.65.73) 13.21ms
 [W 141109 17:00:14 web:1811] 404 GET /apple-touch-icon-precomposed.png (10.10.65.73) 1.52ms
 [W 141109 17:00:14 web:1811] 404 GET /apple-touch-icon.png (10.10.65.73) 0.42ms
+[I 141110 14:39:28 web:1811] 304 GET / (10.10.65.73) 22.63ms
+[I 141110 14:39:28 web:1811] 200 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.72ms
+[W 141110 14:39:28 web:1811] 404 GET /favicon.ico (10.10.65.73) 4.13ms
+[I 141110 15:25:19 web:1811] 302 GET / (10.10.65.73) 2.23ms
+[I 141110 15:25:19 web:1811] 304 GET /login?next=%2F (10.10.65.73) 8.51ms
+[I 141112 10:26:39 web:1811] 302 GET / (10.10.65.73) 1.18ms
+[I 141112 10:26:39 web:1811] 200 GET /login?next=%2F (10.10.65.73) 11.67ms
+[I 141112 10:26:39 web:1811] 200 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.79ms
+[I 141112 10:26:39 web:1811] 200 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.25ms
+[I 141112 10:26:39 web:1811] 200 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.69ms
+[I 141112 11:47:03 web:1811] 302 GET / (10.10.65.73) 1.24ms
+[I 141112 11:47:03 web:1811] 200 GET /login?next=%2F (10.10.65.73) 7.33ms
+[I 141112 11:47:03 web:1811] 200 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.98ms
+[I 141112 11:47:03 web:1811] 200 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.21ms
+[I 141112 11:47:03 web:1811] 200 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.89ms
+[I 141112 23:02:49 web:1811] 302 GET / (10.10.65.73) 1.22ms
+[I 141112 23:02:49 web:1811] 200 GET /login?next=%2F (10.10.65.73) 7.20ms
+[I 141112 23:02:49 web:1811] 200 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.87ms
+[I 141112 23:02:49 web:1811] 200 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.64ms
+[I 141112 23:02:49 web:1811] 200 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.05ms
+[I 141112 23:02:54 web:1811] 302 GET /getPostList (10.10.65.73) 1.29ms
+[I 141112 23:02:54 web:1811] 200 GET /login?next=%2FgetPostList (10.10.65.73) 7.30ms
+[I 141112 23:02:59 web:1811] 301 POST /login?next=%2FgetPostList (10.10.65.73) 6.09ms
+[I 141112 23:02:59 web:1811] 200 GET / (10.10.65.73) 23.25ms
+[I 141112 23:02:59 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.73ms
+[I 141112 23:02:59 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.79ms
+[I 141112 23:02:59 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.42ms
+[I 141112 23:28:43 web:1811] 304 GET / (10.10.65.73) 22.70ms
+[I 141113 10:29:24 web:1811] 200 GET / (10.10.65.73) 22.14ms
+[I 141113 10:29:24 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.66ms
+[I 141113 10:29:24 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.42ms
+[I 141113 10:29:24 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.78ms
+[I 141114 10:48:42 web:1811] 302 GET / (10.10.65.73) 1.35ms
+[I 141114 10:48:42 web:1811] 200 GET /login?next=%2F (10.10.65.73) 7.29ms
+[W 141114 10:48:43 web:1811] 404 GET /favicon.ico (10.10.65.73) 3.79ms
+[I 141114 10:48:43 web:1811] 302 GET / (10.10.65.73) 1.11ms
+[I 141114 10:48:43 web:1811] 200 GET /login?next=%2F (10.10.65.73) 7.56ms
+[W 141114 10:48:43 web:1811] 404 GET /apple-touch-icon-precomposed.png (10.10.65.73) 2.29ms
+[W 141114 10:48:43 web:1811] 404 GET /apple-touch-icon.png (10.10.65.73) 0.88ms
+[I 141118 11:21:28 web:1811] 302 GET / (10.10.65.73) 1.23ms
+[I 141118 11:21:28 web:1811] 200 GET /login?next=%2F (10.10.65.73) 16.14ms
+[W 141118 11:21:28 web:1811] 404 GET /favicon.ico (10.10.65.73) 3.44ms
+[I 141118 11:21:28 web:1811] 302 GET / (10.10.65.73) 1.16ms
+[I 141118 11:21:28 web:1811] 200 GET /login?next=%2F (10.10.65.73) 7.44ms
+[W 141118 11:21:29 web:1811] 404 GET /apple-touch-icon-precomposed.png (10.10.65.73) 2.25ms
+[W 141118 11:21:29 web:1811] 404 GET /apple-touch-icon.png (10.10.65.73) 0.85ms
+[I 141122 17:27:20 web:1811] 302 GET / (10.10.65.73) 1.23ms
+[I 141122 17:27:20 web:1811] 200 GET /login?next=%2F (10.10.65.73) 7.34ms
+[W 141122 17:27:20 web:1811] 404 GET /favicon.ico (10.10.65.73) 4.29ms
+[I 141122 17:27:20 web:1811] 302 GET / (10.10.65.73) 1.25ms
+[I 141122 17:27:20 web:1811] 200 GET /login?next=%2F (10.10.65.73) 7.71ms
+[W 141122 17:27:20 web:1811] 404 GET /apple-touch-icon-precomposed.png (10.10.65.73) 2.32ms
+[W 141122 17:27:20 web:1811] 404 GET /apple-touch-icon.png (10.10.65.73) 0.84ms
+[I 141126 16:02:17 web:1811] 304 GET / (10.10.65.73) 22.56ms
+[W 141126 16:02:19 web:1811] 404 GET /favicon.ico (10.10.65.73) 3.79ms
+[I 141126 16:05:03 web:1811] 304 GET /getPostList (10.10.65.73) 16.85ms
+[I 141126 16:05:09 web:1811] 304 GET / (10.10.65.73) 24.82ms
+[I 141126 16:05:11 web:1811] 304 GET /getPostList (10.10.65.73) 17.14ms
+[I 141126 16:05:12 web:1811] 304 GET / (10.10.65.73) 23.08ms
+[I 141126 17:46:55 web:1811] 302 GET / (10.10.65.73) 1.27ms
+[I 141126 17:46:55 web:1811] 200 GET /login?next=%2F (10.10.65.73) 7.30ms
+[W 141126 17:46:55 web:1811] 404 GET /favicon.ico (10.10.65.73) 4.16ms
+[I 141126 17:46:55 web:1811] 302 GET / (10.10.65.73) 1.14ms
+[I 141126 17:46:55 web:1811] 200 GET /login?next=%2F (10.10.65.73) 7.32ms
+[W 141126 17:46:55 web:1811] 404 GET /apple-touch-icon-precomposed.png (10.10.65.73) 2.36ms
+[W 141126 17:46:55 web:1811] 404 GET /apple-touch-icon.png (10.10.65.73) 0.92ms
+[I 141126 17:46:58 web:1811] 302 GET / (10.10.65.73) 1.20ms
+[I 141126 17:46:58 web:1811] 200 GET /login?next=%2F (10.10.65.73) 7.49ms
+[I 141126 17:46:58 web:1811] 200 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.79ms
+[I 141126 17:46:58 web:1811] 200 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.73ms
+[I 141126 17:46:58 web:1811] 200 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.06ms
+[W 141126 17:46:59 web:1811] 404 GET /favicon.ico (10.10.65.73) 3.94ms
+[I 141126 17:47:03 web:1811] 301 POST /login?next=%2F (10.10.65.73) 5.45ms
+[I 141126 17:47:03 web:1811] 200 GET / (10.10.65.73) 23.08ms
+[I 141126 17:47:03 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.59ms
+[I 141126 17:47:03 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.65ms
+[I 141126 17:47:03 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.74ms
+[I 141126 17:48:14 web:1811] 200 GET / (10.10.65.73) 25.07ms
+[I 141126 17:48:14 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.59ms
+[I 141126 17:48:14 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.84ms
+[I 141126 17:48:14 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.46ms
+[I 141126 17:48:52 web:1811] 304 GET / (10.10.65.73) 25.89ms
+[I 141126 17:49:51 web:1811] 200 GET / (10.10.65.73) 25.52ms
+[I 141126 17:49:51 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.60ms
+[I 141126 17:49:51 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.76ms
+[I 141126 17:49:51 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.48ms
+[I 141126 17:50:06 web:1811] 302 GET / (10.10.65.73) 1.16ms
+[I 141126 17:50:06 web:1811] 200 GET /login?next=%2F (10.10.65.73) 10.56ms
+[I 141126 17:50:06 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.69ms
+[I 141126 17:50:06 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.83ms
+[I 141126 17:50:06 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.40ms
+[I 141126 17:50:10 web:1811] 301 POST /login?next=%2F (10.10.65.73) 3.70ms
+[I 141126 17:50:10 web:1811] 200 GET / (10.10.65.73) 16.39ms
+[I 141126 17:50:10 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 2.03ms
+[I 141126 17:50:10 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.12ms
+[I 141126 17:50:10 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 0.84ms
+[I 141126 17:50:30 web:1811] 304 GET / (10.10.65.73) 26.13ms
+[I 141126 17:50:30 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.98ms
+[I 141126 17:50:30 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.54ms
+[I 141126 17:50:30 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.39ms
+[I 141126 17:51:14 web:1811] 200 GET / (10.10.65.73) 27.20ms
+[I 141126 17:51:14 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.81ms
+[I 141126 17:51:14 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 5.73ms
+[I 141126 17:51:14 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.93ms
+[I 141126 17:54:18 web:1811] 304 GET / (10.10.65.73) 29.55ms
+[I 141126 17:54:18 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.61ms
+[I 141126 17:54:18 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.82ms
+[I 141126 17:54:18 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.43ms
+[I 141126 18:40:12 autoreload:191] /ROOT/server/iGodoo/controllers/CreatePost.py modified; restarting server
+[W 141126 18:40:24 web:1404] 400 POST /createPost (10.10.65.73): Missing argument imgData
+[W 141126 18:40:24 web:1811] 400 POST /createPost (10.10.65.73) 6.43ms
+[W 141126 18:40:27 web:1404] 400 POST /createPost (10.10.65.73): Missing argument imgData
+[W 141126 18:40:27 web:1811] 400 POST /createPost (10.10.65.73) 2.52ms
+[I 141126 18:41:42 web:1811] 200 GET / (10.10.65.73) 39.06ms
+[I 141126 18:41:42 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 3.43ms
+[I 141126 18:41:42 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 5.12ms
+[I 141126 18:41:42 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.91ms
+[I 141126 18:41:44 web:1811] 200 POST /createPost (10.10.65.73) 3.67ms
+[I 141126 18:41:47 web:1811] 304 GET / (10.10.65.73) 30.45ms
+[I 141126 18:41:56 web:1811] 200 POST /createPost (10.10.65.73) 3.54ms
+[I 141126 18:42:00 web:1811] 200 POST /savePost (10.10.65.73) 1.86ms
+[I 141126 18:43:55 autoreload:191] /ROOT/server/iGodoo/controllers/CreatePost.py modified; restarting server
+[I 141126 18:47:43 web:1811] 304 GET / (10.10.65.73) 40.68ms
+[I 141126 18:54:02 web:1811] 200 GET /getPostList (10.10.65.73) 15.32ms
+[I 141126 18:54:04 web:1811] 200 GET /post/545c87e2d8aadf51e38da3e2 (10.10.65.73) 18.12ms
+[I 141126 19:00:48 web:1811] 200 POST /createPost (10.10.65.73) 3.63ms
+[I 141126 19:00:51 web:1811] 200 GET /getPostList (10.10.65.73) 16.24ms
+[I 141126 19:00:54 web:1811] 200 GET /post/5475ae78d8aadf0b36292cb9 (10.10.65.73) 17.65ms
+[I 141126 19:00:55 web:1811] 200 POST /alterExistPost (10.10.65.73) 4.39ms
+[I 141126 19:00:58 web:1811] 200 GET / (10.10.65.73) 26.98ms
+[I 141126 19:01:43 web:1811] 200 GET / (10.10.65.73) 26.23ms
+[I 141126 19:01:43 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 4.14ms
+[I 141126 19:01:43 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.43ms
+[I 141126 19:01:43 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.50ms
+[I 141126 19:02:22 web:1811] 200 GET / (10.10.65.73) 26.20ms
+[I 141126 19:02:22 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.89ms
+[I 141126 19:02:22 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.73ms
+[I 141126 19:02:22 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.49ms
+[W 141126 19:02:29 web:1404] 400 POST /createPost (10.10.65.73): Missing argument title
+[W 141126 19:02:29 web:1811] 400 POST /createPost (10.10.65.73) 3.78ms
+[W 141126 19:02:29 web:1404] 400 POST /createPost (10.10.65.73): Missing argument imgData
+[W 141126 19:02:29 web:1811] 400 POST /createPost (10.10.65.73) 2.03ms
+[I 141126 19:02:52 web:1811] 304 GET /getPostList (10.10.65.73) 17.30ms
+[I 141126 19:02:55 web:1811] 304 GET /post/5475ae78d8aadf0b36292cb9 (10.10.65.73) 16.80ms
+[I 141126 19:02:57 web:1811] 304 GET / (10.10.65.73) 26.01ms
+[W 141126 19:03:04 web:1404] 400 POST /createPost (10.10.65.73): Missing argument title
+[W 141126 19:03:04 web:1811] 400 POST /createPost (10.10.65.73) 3.67ms
+[W 141126 19:03:04 web:1404] 400 POST /createPost (10.10.65.73): Missing argument imgData
+[W 141126 19:03:04 web:1811] 400 POST /createPost (10.10.65.73) 1.94ms
+[W 141126 19:06:52 web:1404] 400 POST /createPost (10.10.65.73): Missing argument title
+[W 141126 19:06:52 web:1811] 400 POST /createPost (10.10.65.73) 2.23ms
+[W 141126 19:06:52 web:1404] 400 POST /createPost (10.10.65.73): Missing argument imgData
+[W 141126 19:06:52 web:1811] 400 POST /createPost (10.10.65.73) 1.95ms
+[I 141126 19:07:29 web:1811] 304 GET / (10.10.65.73) 26.12ms
+[I 141126 19:07:29 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.83ms
+[I 141126 19:07:29 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.82ms
+[I 141126 19:07:29 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.39ms
+[W 141126 19:07:38 web:1404] 400 POST /createPost (10.10.65.73): Missing argument title
+[W 141126 19:07:38 web:1811] 400 POST /createPost (10.10.65.73) 3.85ms
+[W 141126 19:07:38 web:1404] 400 POST /createPost (10.10.65.73): Missing argument imgData
+[W 141126 19:07:38 web:1811] 400 POST /createPost (10.10.65.73) 1.95ms
+[I 141126 19:08:25 web:1811] 200 GET / (10.10.65.73) 26.59ms
+[I 141126 19:08:25 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.77ms
+[I 141126 19:08:25 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.39ms
+[I 141126 19:08:25 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.88ms
+[W 141126 19:08:31 web:1404] 400 POST /createPost (10.10.65.73): Missing argument title
+[W 141126 19:08:31 web:1811] 400 POST /createPost (10.10.65.73) 3.94ms
+[W 141126 19:08:31 web:1404] 400 POST /createPost (10.10.65.73): Missing argument imgData
+[W 141126 19:08:31 web:1811] 400 POST /createPost (10.10.65.73) 1.92ms
+[I 141126 19:10:05 web:1811] 200 GET / (10.10.65.73) 22.08ms
+[I 141126 19:10:05 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.40ms
+[I 141126 19:10:05 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.47ms
+[I 141126 19:10:05 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.21ms
+[W 141126 19:10:14 web:1404] 400 POST /createPost (10.10.65.73): Missing argument imgData
+[W 141126 19:10:14 web:1811] 400 POST /createPost (10.10.65.73) 5.24ms
+[W 141126 19:10:14 web:1404] 400 POST /createPost (10.10.65.73): Missing argument title
+[W 141126 19:10:14 web:1811] 400 POST /createPost (10.10.65.73) 1.46ms
+[I 141126 21:12:09 web:1811] 304 GET / (10.10.65.73) 26.15ms
+[I 141126 21:12:09 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.71ms
+[I 141126 21:12:09 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.76ms
+[I 141126 21:12:09 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.83ms
+[I 141126 21:43:36 web:1811] 200 GET / (10.10.65.73) 26.91ms
+[I 141126 22:08:31 web:1811] 304 GET / (10.10.65.73) 25.16ms
+[I 141126 22:08:39 web:1811] 200 GET / (10.10.65.73) 26.30ms
+[I 141126 22:08:39 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.73ms
+[I 141126 22:08:39 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.85ms
+[I 141126 22:08:39 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.40ms
+[I 141126 22:08:41 web:1811] 200 GET / (10.10.65.73) 26.70ms
+[I 141126 22:08:41 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.73ms
+[I 141126 22:08:41 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.44ms
+[I 141126 22:08:41 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.68ms
+[I 141126 22:09:06 web:1811] 200 GET / (10.10.65.73) 27.07ms
+[I 141126 22:09:06 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.63ms
+[I 141126 22:09:06 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.53ms
+[I 141126 22:09:06 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.06ms
+[I 141126 23:06:04 web:1811] 200 GET / (10.10.65.73) 25.49ms
+[I 141126 23:06:04 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.97ms
+[I 141126 23:06:04 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.46ms
+[I 141126 23:06:04 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.53ms
+[I 141126 23:14:26 web:1811] 200 GET / (10.10.65.73) 25.17ms
+[I 141126 23:14:26 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.58ms
+[I 141126 23:14:26 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.89ms
+[I 141126 23:14:26 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 2.25ms
+[I 141126 23:15:53 web:1811] 200 GET / (10.10.65.73) 26.16ms
+[I 141126 23:15:53 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 2.07ms
+[I 141126 23:15:53 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.93ms
+[I 141126 23:15:53 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.40ms
+[W 141126 23:18:58 web:1404] 400 POST /createPost (10.10.65.73): Missing argument imgData
+[W 141126 23:18:58 web:1811] 400 POST /createPost (10.10.65.73) 167148.99ms
+[W 141126 23:19:04 web:1404] 400 POST /createPost (10.10.65.73): Missing argument imgData
+[W 141126 23:19:04 web:1811] 400 POST /createPost (10.10.65.73) 174240.04ms
+[I 141126 23:19:14 web:1811] 200 GET / (10.10.65.73) 26.21ms
+[I 141126 23:19:14 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.71ms
+[I 141126 23:19:14 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.86ms
+[I 141126 23:19:14 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.44ms
+[I 141126 23:19:34 web:1811] 200 GET / (10.10.65.73) 26.03ms
+[I 141126 23:19:34 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.08ms
+[I 141126 23:19:34 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.58ms
+[I 141126 23:19:34 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.54ms
+[I 141126 23:19:37 web:1811] 304 GET / (10.10.65.73) 25.01ms
+[I 141126 23:19:37 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.89ms
+[I 141126 23:19:37 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.47ms
+[I 141126 23:19:37 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.57ms
+[I 141126 23:21:40 autoreload:191] /ROOT/server/iGodoo/controllers/CreatePost.py modified; restarting server
+[I 141126 23:21:41 web:1811] 304 GET / (10.10.65.73) 39.21ms
+[I 141126 23:21:41 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 3.06ms
+[I 141126 23:21:41 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.53ms
+[I 141126 23:21:41 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.81ms
+[I 141126 23:24:22 web:1811] 200 GET / (10.10.65.73) 23.92ms
+[I 141126 23:24:23 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.63ms
+[I 141126 23:24:23 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.99ms
+[I 141126 23:24:23 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.69ms
+[I 141126 23:24:35 web:1811] 200 POST /createPost (10.10.65.73) 3.48ms
+[I 141126 23:24:38 web:1811] 304 GET / (10.10.65.73) 26.81ms
+[I 141126 23:24:39 web:1811] 200 POST /createPost (10.10.65.73) 164817.91ms
+[I 141126 23:25:15 web:1811] 200 GET / (10.10.65.73) 30.60ms
+[I 141126 23:25:15 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.68ms
+[I 141126 23:25:15 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.77ms
+[I 141126 23:25:15 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.50ms
+[I 141126 23:25:34 web:1811] 200 GET / (10.10.65.73) 21.96ms
+[I 141126 23:25:34 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.79ms
+[I 141126 23:25:35 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.05ms
+[I 141126 23:25:35 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.57ms
+[I 141126 23:25:38 web:1811] 200 POST /createPost (10.10.65.73) 13.77ms
+[I 141126 23:25:40 web:1811] 304 GET / (10.10.65.73) 26.94ms
+[I 141126 23:26:19 web:1811] 200 POST /createPost (10.10.65.73) 65.43ms
+[I 141126 23:26:25 web:1811] 304 GET / (10.10.65.73) 24.52ms
+[I 141126 23:26:33 web:1811] 200 POST /createPost (10.10.65.73) 46.08ms
+[I 141126 23:26:40 web:1811] 304 GET / (10.10.65.73) 23.32ms
+[I 141126 23:28:31 web:1811] 200 POST /createPost (10.10.65.73) 103270.66ms
+[I 141126 23:32:58 web:1811] 304 GET / (10.10.65.73) 23.51ms
+[I 141126 23:34:02 web:1811] 200 GET / (10.10.65.73) 23.23ms
+[I 141126 23:34:02 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.60ms
+[I 141126 23:34:02 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.63ms
+[I 141126 23:34:02 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.78ms
+[I 141126 23:34:59 web:1811] 200 GET / (10.10.65.73) 24.34ms
+[I 141126 23:34:59 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.67ms
+[I 141126 23:34:59 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.58ms
+[I 141126 23:34:59 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.98ms
+[I 141126 23:37:40 web:1811] 200 GET / (10.10.65.73) 23.27ms
+[I 141126 23:37:40 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.71ms
+[I 141126 23:37:40 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.46ms
+[I 141126 23:37:40 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.74ms
+[I 141126 23:38:38 web:1811] 200 GET / (10.10.65.73) 24.72ms
+[I 141126 23:38:38 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.67ms
+[I 141126 23:38:38 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.38ms
+[I 141126 23:38:38 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.67ms
+[I 141126 23:39:11 web:1811] 200 GET /login (10.10.65.73) 7.85ms
+[I 141126 23:39:56 web:1811] 304 GET /login (10.10.65.73) 7.53ms
+[I 141126 23:39:56 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.72ms
+[I 141126 23:39:56 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.39ms
+[I 141126 23:39:56 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.88ms
+[I 141126 23:40:55 web:1811] 304 GET / (10.10.65.73) 24.49ms
+[I 141126 23:40:55 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.68ms
+[I 141126 23:40:55 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.38ms
+[I 141126 23:40:55 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.71ms
+[E 141126 23:40:58 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0', 'If-None-Match': '"95d96c5ab06d3f74d4a5c492f670043f336d457b"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 25, in _tt_execute
+        _tt_tmp = userName  # layout/header.html:5 (via login.html:2)
+    NameError: global name 'userName' is not defined
+[E 141126 23:40:58 web:1811] 500 GET /login (10.10.65.73) 14.12ms
+[E 141126 23:41:37 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 24, in _tt_execute
+        _tt_tmp = userName  # login.html:6
+    NameError: global name 'userName' is not defined
+[E 141126 23:41:37 web:1811] 500 GET /login (10.10.65.73) 12.65ms
+[E 141126 23:41:37 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 24, in _tt_execute
+        _tt_tmp = userName  # login.html:6
+    NameError: global name 'userName' is not defined
+[E 141126 23:41:37 web:1811] 500 GET /login (10.10.65.73) 11.50ms
+[E 141126 23:41:38 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 24, in _tt_execute
+        _tt_tmp = userName  # login.html:6
+    NameError: global name 'userName' is not defined
+[E 141126 23:41:38 web:1811] 500 GET /login (10.10.65.73) 11.45ms
+[E 141126 23:42:41 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 24, in _tt_execute
+        _tt_tmp = userName  # login.html:6
+    NameError: global name 'userName' is not defined
+[E 141126 23:42:41 web:1811] 500 GET /login (10.10.65.73) 11.49ms
+[E 141126 23:42:41 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 24, in _tt_execute
+        _tt_tmp = userName  # login.html:6
+    NameError: global name 'userName' is not defined
+[E 141126 23:42:41 web:1811] 500 GET /login (10.10.65.73) 11.46ms
+[E 141126 23:42:42 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 24, in _tt_execute
+        _tt_tmp = userName  # login.html:6
+    NameError: global name 'userName' is not defined
+[E 141126 23:42:42 web:1811] 500 GET /login (10.10.65.73) 11.64ms
+[E 141126 23:43:04 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 24, in _tt_execute
+        _tt_tmp = userName  # login.html:6
+    NameError: global name 'userName' is not defined
+[E 141126 23:43:04 web:1811] 500 GET /login (10.10.65.73) 11.28ms
+[E 141126 23:43:05 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 24, in _tt_execute
+        _tt_tmp = userName  # login.html:6
+    NameError: global name 'userName' is not defined
+[E 141126 23:43:05 web:1811] 500 GET /login (10.10.65.73) 11.48ms
+[E 141126 23:43:06 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 24, in _tt_execute
+        _tt_tmp = userName  # login.html:6
+    NameError: global name 'userName' is not defined
+[E 141126 23:43:06 web:1811] 500 GET /login (10.10.65.73) 17.30ms
+[E 141126 23:43:07 web:1407] Uncaught exception GET /login (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/login', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Cookie': 'user="2|1:0|10:1415369506|4:user|8:YWRtaW4=|630d22c555bb4c2218d74ef7de39040d780f8c02947ae2074ebb609b2b726b4d"; bdshare_firstime=1416982564383', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/ROOT/server/iGodoo/controllers/Login.py", line 45, in get
+        self.render("login.html",username=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "login_html.generated.py", line 24, in _tt_execute
+        _tt_tmp = userName  # login.html:6
+    NameError: global name 'userName' is not defined
+[E 141126 23:43:07 web:1811] 500 GET /login (10.10.65.73) 11.31ms
+[I 141126 23:43:47 web:1811] 200 GET /login (10.10.65.73) 7.60ms
+[I 141126 23:43:47 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.63ms
+[I 141126 23:43:47 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.37ms
+[I 141126 23:43:47 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.70ms
+[I 141126 23:44:17 web:1811] 200 GET /login (10.10.65.73) 7.42ms
+[I 141126 23:44:17 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.97ms
+[I 141126 23:44:17 web:1811] 304 GET /static/css/style.css?v=1fe7a14b82b73ccf480f1975bb40bfd9 (10.10.65.73) 1.44ms
+[I 141126 23:44:17 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.82ms
+[I 141126 23:45:22 web:1811] 200 GET /login (10.10.65.73) 7.62ms
+[I 141126 23:45:22 web:1811] 200 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 2.19ms
+[I 141126 23:45:22 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.76ms
+[I 141126 23:45:22 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.44ms
+[I 141126 23:45:24 web:1811] 304 GET /login (10.10.65.73) 7.35ms
+[I 141126 23:45:24 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.84ms
+[I 141126 23:45:24 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.48ms
+[I 141126 23:45:24 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 1.37ms
+[I 141126 23:45:30 web:1811] 200 GET /login (10.10.65.73) 8.34ms
+[I 141126 23:45:30 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.60ms
+[I 141126 23:45:30 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 1.40ms
+[I 141126 23:45:30 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.72ms
+[I 141126 23:45:57 web:1811] 304 GET /login (10.10.65.73) 7.38ms
+[I 141126 23:45:57 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.58ms
+[I 141126 23:45:57 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 1.44ms
+[I 141126 23:45:57 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.78ms
+[I 141126 23:46:09 web:1811] 301 POST /login (10.10.65.73) 4.55ms
+[I 141126 23:46:09 web:1811] 200 GET / (10.10.65.73) 17.04ms
+[I 141126 23:46:36 web:1811] 200 GET /getPostList (10.10.65.73) 15.12ms
+[I 141126 23:46:41 web:1811] 304 GET / (10.10.65.73) 29.01ms
+[I 141126 23:48:46 web:1811] 304 GET / (10.10.65.73) 23.82ms
+[I 141126 23:48:46 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.68ms
+[I 141126 23:48:46 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 1.43ms
+[I 141126 23:48:46 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.76ms
+[I 141127 10:06:32 web:1811] 304 GET / (10.10.65.73) 23.77ms
+[I 141127 10:06:32 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.92ms
+[I 141127 10:06:32 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.58ms
+[I 141127 10:06:32 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (10.10.65.73) 1.40ms
