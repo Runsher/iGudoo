@@ -50,7 +50,7 @@ class CreatePostHandler(BaseHandler):
 	global postData
 	postData=[{"title":title,"postinfo":postinfo,"shortcut":shortcut,"imgurl":imgurl,"createDate":datetime.datetime.now()}][0]
 
-	self.render("prelook.html",title=title,postinfo=postinfo,userName=name)
+	self.render("createPost/prelook.html",title=title,postinfo=postinfo,userName=name)
 
 class CreateExistPostHandler(BaseHandler):
     @tornado.web.authenticated
@@ -73,7 +73,7 @@ class CreateExistPostHandler(BaseHandler):
                 shortcut = "无剪辑..."
         global postData
         postData=[{"title":title,"postinfo":postinfo,"shortcut":shortcut,"imgurl":imgurl,"createDate":datetime.datetime.now()}][0]
-        self.render("prexistlook.html",postid=postid,title=title,postinfo=postinfo,userName=name)
+        self.render("createPost/prexistlook.html",postid=postid,title=title,postinfo=postinfo,userName=name)
 
 class SaveExistPostHandler(CreateExistPostHandler):
     @tornado.web.authenticated
@@ -93,7 +93,7 @@ class ViewPostHandler(BaseHandler):
         postinfo = viewpostinfo["postinfo"]
         postData = viewpostinfo
         dbconn.close()
-        self.render("viewpost.html",postinfo=postinfo,title=title,postid=postid,userName=name)
+        self.render("createPost/viewpost.html",postinfo=postinfo,title=title,postid=postid,userName=name)
 class SavePostHandler(CreatePostHandler):
     @tornado.web.authenticated
     def post(self):
@@ -107,7 +107,7 @@ class AlterPostHandler(CreatePostHandler):
 	postinfo = postData["postinfo"]
 	shortcut = postData["shortcut"]
 	imgurl = postData["imgurl"]
-	self.render("alterpost.html",title=title,postinfo=postinfo,shortcut=shortcut,imgurl=imgurl,userName=name)
+	self.render("createPost/alterpost.html",title=title,postinfo=postinfo,shortcut=shortcut,imgurl=imgurl,userName=name)
 
 class AlterExistPostHandler(ViewPostHandler):
     @tornado.web.authenticated
@@ -119,7 +119,7 @@ class AlterExistPostHandler(ViewPostHandler):
         postinfo = viewpostinfo["postinfo"]
         shortcut = viewpostinfo["shortcut"]
 	imgurl = viewpostinfo["imgurl"]
-        self.render("alterexistpost.html",postid=postid,title=title,postinfo=postinfo,shortcut=shortcut,imgurl=imgurl,userName=name)
+        self.render("createPost/alterexistpost.html",postid=postid,title=title,postinfo=postinfo,shortcut=shortcut,imgurl=imgurl,userName=name)
 
 class DelPostHandler(ViewPostHandler):
     def post(self):
@@ -136,7 +136,7 @@ class ListPostHandler(BaseHandler):
                 post=[i["title"],i["shortcut"],i["createDate"],i["_id"]]
                 listpost.append(post)
 	dbconn.close()	
-	self.render("postslist.html",listposts=listpost,userName=name)
+	self.render("createPost/postslist.html",listposts=listpost,userName=name)
 
 	
 

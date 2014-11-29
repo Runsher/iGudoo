@@ -1,14 +1,12 @@
-<h5>文章修改</h5>
+<h3>创建文章</h3>
 <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color=#987cb9 SIZE=3>
 <h4>标题</h4>
 <div class="row">
     <div class="col-sm-6">
         <input id="title" type=">text" class="form-control" placeholder="Title">
-		<p>原标题:{{ title }}</p>
     </div>
     <div class="col-sm-6">
         <input id="imgurl" type=">text" class="form-control" placeholder="imgurl">
-	<p>原ImgUrl:{{ imgurl }}</p>
     </div>
 </div>
 <h4>标签</h4>
@@ -16,13 +14,10 @@
     <div class="col-sm-6">
 <div  class="col-sm-6 tap tap-chose">
 <label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> 原创
+  <input type="radio" checked="checked" name="inlineRadioOptions" id="inlineRadio1" value="原创"> 原创
 </label>
 <label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> 首发
-</label>
-<label class="radio-inline">
-  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"> 转载
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="转载"> 转载
 </label>
 </div>
 <div class="col-sm-6 tap tap-type">
@@ -30,24 +25,32 @@
 <h5>内容分类:</h5>
     </div>
     <div class="col-sm-6 tap">
-<select class="form-control">
-  <option>一碗鸡汤</option>
-  <option>吐啊吐</option>
-  <option>喜闻乐见</option>
-  <option>道听途说</option>
-  <option>故事里的故事</option>
+<select id="choseSelect" class="form-control">
+  <option>文艺范</option>
+  <option>技术控</option>
+  <option>评论家</option>
+  <option>购物狂</option>
+  <option>游戏王</option>
 </select>
 </div>
 </div>
 </div>
+<div  class="col-sm-6 tap-type">
+  <div class="form-group">
+    <label for="username" class="writer col-sm-2 control-label">作者:</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="writer" placeholder="{{userName}}">
+    </div>
+  </div>
+</div>
 </div>
 <!--div class="sunote" id="summernote">Hello Summernote</div-->
-<div  id="summernote" class="sunote">{% raw postinfo %}</div>
+<div  id="summernote" class="sunote"></div>
 <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color=#987cb9 SIZE=3>
 <h4>简介</h4>
 <div class="row">
 <div class=col-sm-6>
-<textarea id="content"  name="content" class="form-control" rows="3"> {{ shortcut }}</textarea>
+<textarea id="content"  name="content" class="form-control" rows="3"></textarea>
 </div>
 </div>
 
@@ -78,11 +81,24 @@ $('.sunote').summernote({
 <script>
 $(document).ready(function(){
 $("#createPost").click(function(){
+var inline1=$('input:radio[name="inlineRadioOptions"]:checked').val();
 var title=$("#title").val();
-var inline1=$("#inlineRadio1").val();
+if(!title){
+  alert("标题不能为空!");
+  return false;
+}
+writer = $("#writer").val();
+if(!writer){
+var writer = $("#writer").attr("placeholder")
+}
+var posttag=$('#choseSelect').children('option:selected').val();
 var sHTML = $("#summernote").code();
 var shortcut = $("#content").val();
 var imgurl = $("#imgurl").val();
+if(!imgurl){
+  alert("图片地址不能为空");
+  return false;
+}
 $.post("/createPost",{title:title,inline1:inline1,sHTML:sHTML,shortcut:shortcut,imgurl:imgurl},function(res){
 $("#makePost").html(res);
 });

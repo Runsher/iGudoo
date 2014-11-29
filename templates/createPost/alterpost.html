@@ -1,12 +1,12 @@
-<h3>创建文章</h3>
+<h5>文章修改</h5>
 <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color=#987cb9 SIZE=3>
 <h4>标题</h4>
 <div class="row">
     <div class="col-sm-6">
-        <input id="title" type=">text" class="form-control" placeholder="Title">
+        <input id="title" type=">text" class="form-control" placeholder="{{ title }}">
     </div>
     <div class="col-sm-6">
-        <input id="imgurl" type=">text" class="form-control" placeholder="imgurl">
+        <input id="imgurl" type=">text" class="form-control" placeholder="{{ imgurl }}">
     </div>
 </div>
 <h4>标签</h4>
@@ -38,16 +38,14 @@
 </div>
 </div>
 </div>
-<div  class="col-sm-6">作者: {{userName}}
-</div>
 </div>
 <!--div class="sunote" id="summernote">Hello Summernote</div-->
-<div  id="summernote" class="sunote"></div>
+<div  id="summernote" class="sunote">{% raw postinfo %}</div>
 <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color=#987cb9 SIZE=3>
 <h4>简介</h4>
 <div class="row">
 <div class=col-sm-6>
-<textarea id="content"  name="content" class="form-control" rows="3"></textarea>
+<textarea id="content"  name="content" class="form-control" rows="3"> {{ shortcut }}</textarea>
 </div>
 </div>
 
@@ -79,10 +77,16 @@ $('.sunote').summernote({
 $(document).ready(function(){
 $("#createPost").click(function(){
 var title=$("#title").val();
+if(!title){
+var title=$("#title").attr("placeholder")
+}
 var inline1=$("#inlineRadio1").val();
 var sHTML = $("#summernote").code();
 var shortcut = $("#content").val();
 var imgurl = $("#imgurl").val();
+if(!imgurl){
+var imgurl = $("#imgurl").attr("placeholder")
+}
 $.post("/createPost",{title:title,inline1:inline1,sHTML:sHTML,shortcut:shortcut,imgurl:imgurl},function(res){
 $("#makePost").html(res);
 });

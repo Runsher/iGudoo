@@ -5,11 +5,9 @@
 <div class="row">
     <div class="col-sm-6">
         <input id="title" type=">text" class="form-control" placeholder="{{ title }}">
-	<p>原标题:{{ title }}</p>
     </div>
     <div class="col-sm-6">
-        <input id="imgurl" type=">text" class="form-control" placeholder="imgurl">
-        <p>原ImgUrl:{{ imgurl }}</p>
+        <input id="imgurl" type=">text" class="form-control" placeholder="{{ imgurl }}">
     </div>
 </div>
 <h4>标签</h4>
@@ -81,10 +79,16 @@ $(document).ready(function(){
 $("#createPost").click(function(){
 var postid=$("#postid").val();
 var title=$("#title").val();
+if(!title){
+var title=$("#title").attr("placeholder")
+}
 var inline1=$("#inlineRadio1").val();
 var sHTML = $("#summernote").code();
 var shortcut = $("#content").val();
 var imgurl = $("#imgurl").val();
+if(!imgurl){
+var imgurl = $("#imgurl").attr("placeholder")
+}
 $.post("/createPost",{title:title,inline1:inline1,sHTML:sHTML,shortcut:shortcut,imgurl:imgurl},function(res){
 $("#makePost").html(res);
 });
