@@ -21,7 +21,7 @@ class Auth():
 
 			dbconn.connect()
 			conn = dbconn.getConn()
-			userInfo = conn.DJ_MySQL_Admin.userInfo
+			userInfo = conn.iGudoo_Admin.userInfo
 			password=userInfo.find({"name":username})[0]['password']
 			conn.close()
                         #password = MySQL.MysqlQuery().query_select('select password from DB_DAS.user where username="%s"' %(username))[0][0]

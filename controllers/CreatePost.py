@@ -91,7 +91,6 @@ class ViewPostHandler(BaseHandler):
 	postid = viewpostinfo["_id"]
         title = viewpostinfo["title"]
         postinfo = viewpostinfo["postinfo"]
-	imgurl = self.get_argument('imgurl')
         postData = viewpostinfo
         dbconn.close()
         self.render("viewpost.html",postinfo=postinfo,title=title,postid=postid,userName=name)

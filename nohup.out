@@ -4571,3 +4571,168 @@ NameError: name 'Login' is not defined
 [I 141127 14:45:25 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.77ms
 [I 141127 14:45:36 web:1811] 200 POST /createPost (10.10.65.73) 3.57ms
 [I 141127 14:46:25 web:1811] 200 POST /savePost (10.10.65.73) 1.72ms
+[I 141129 05:45:14 web:1811] 302 GET / (127.0.0.1) 1.43ms
+[I 141129 05:45:14 web:1811] 200 GET /login?next=%2F (127.0.0.1) 13.21ms
+[I 141129 05:45:15 web:1811] 200 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 10.51ms
+[I 141129 05:45:15 web:1811] 200 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.72ms
+[I 141129 05:45:15 web:1811] 200 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.71ms
+[I 141129 05:45:21 web:1811] 301 POST /login?next=%2F (127.0.0.1) 2.93ms
+[I 141129 05:45:23 web:1811] 200 GET /login (127.0.0.1) 5.16ms
+[I 141129 05:45:24 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 2.19ms
+[I 141129 05:45:24 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.20ms
+[I 141129 05:45:24 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.81ms
+[I 141129 05:48:35 web:1811] 301 POST /login (127.0.0.1) 2.75ms
+[I 141129 05:48:36 web:1811] 200 GET /login (127.0.0.1) 3.94ms
+[I 141129 05:48:36 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.08ms
+[I 141129 05:48:36 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.73ms
+[I 141129 05:48:36 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 1.38ms
+[I 141129 05:50:38 web:1811] 301 POST /login (127.0.0.1) 2.14ms
+[I 141129 05:50:39 web:1811] 200 GET /login (127.0.0.1) 4.21ms
+[I 141129 05:50:41 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 2.21ms
+[I 141129 05:50:41 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.28ms
+[I 141129 05:50:41 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.19ms
+[I 141129 05:50:49 web:1811] 301 POST /login (127.0.0.1) 3.14ms
+[I 141129 05:50:50 web:1811] 200 GET /login (127.0.0.1) 5.67ms
+[I 141129 05:50:50 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.98ms
+[I 141129 05:50:50 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 1.33ms
+[I 141129 05:50:50 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.18ms
+[I 141129 05:52:07 web:1811] 301 POST /login (127.0.0.1) 6.68ms
+[I 141129 05:52:07 web:1811] 200 GET /login (127.0.0.1) 4.49ms
+[I 141129 05:52:08 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 1.31ms
+[I 141129 05:52:08 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 0.99ms
+[I 141129 05:52:08 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.32ms
+[I 141129 05:54:26 autoreload:191] /ROOT/server/iGudoo/controllers/Login.py modified; restarting server
+[I 141129 05:54:28 web:1811] 200 GET /login (127.0.0.1) 6.72ms
+[I 141129 05:54:29 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 8.23ms
+[I 141129 05:54:29 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 1.24ms
+[I 141129 05:54:29 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.40ms
+[I 141129 05:54:33 web:1811] 301 POST /login (127.0.0.1) 3.30ms
+[I 141129 05:54:34 web:1811] 200 GET / (127.0.0.1) 15.65ms
+[I 141129 05:54:34 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 1.50ms
+[I 141129 05:54:34 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.19ms
+[I 141129 05:54:34 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.01ms
+[I 141129 05:54:40 web:1811] 200 GET /getPostList (127.0.0.1) 7.79ms
+[I 141129 05:54:49 web:1811] 304 GET / (127.0.0.1) 14.70ms
+[I 141129 05:54:53 web:1811] 304 GET /getPostList (127.0.0.1) 13.08ms
+[I 141129 05:54:54 web:1811] 304 GET / (127.0.0.1) 14.82ms
+[I 141129 05:54:56 web:1811] 304 GET /getPostList (127.0.0.1) 11.09ms
+[I 141129 05:54:57 web:1811] 304 GET / (127.0.0.1) 13.48ms
+[I 141129 05:55:40 web:1811] 200 GET / (127.0.0.1) 17.08ms
+[I 141129 05:55:40 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.34ms
+[I 141129 05:55:40 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.56ms
+[I 141129 05:55:40 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 2.03ms
+[I 141129 05:55:45 web:1811] 304 GET /getPostList (127.0.0.1) 8.23ms
+[I 141129 05:55:47 web:1811] 304 GET / (127.0.0.1) 11.74ms
+[I 141129 05:55:48 web:1811] 304 GET /getPostList (127.0.0.1) 8.50ms
+[I 141129 05:55:51 web:1811] 304 GET / (127.0.0.1) 15.81ms
+[I 141129 05:55:52 web:1811] 304 GET /getPostList (127.0.0.1) 8.43ms
+[I 141129 05:55:52 web:1811] 304 GET / (127.0.0.1) 13.94ms
+[I 141129 05:55:53 web:1811] 304 GET /getPostList (127.0.0.1) 8.77ms
+[I 141129 05:55:55 web:1811] 304 GET / (127.0.0.1) 14.65ms
+[I 141129 05:55:57 web:1811] 304 GET /getPostList (127.0.0.1) 9.52ms
+[I 141129 05:55:58 web:1811] 304 GET /getPostList (127.0.0.1) 10.63ms
+[I 141129 05:55:59 web:1811] 304 GET / (127.0.0.1) 11.06ms
+[I 141129 05:58:03 web:1811] 304 GET /getPostList (127.0.0.1) 11.01ms
+[I 141129 05:58:05 web:1811] 304 GET / (127.0.0.1) 15.25ms
+[I 141129 05:58:08 web:1811] 304 GET /getPostList (127.0.0.1) 8.28ms
+[I 141129 05:58:12 web:1811] 304 GET / (127.0.0.1) 14.17ms
+[I 141129 05:58:40 web:1811] 200 GET / (127.0.0.1) 11.91ms
+[I 141129 05:58:40 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 1.66ms
+[I 141129 05:58:40 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.85ms
+[I 141129 05:58:40 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.19ms
+[I 141129 05:58:45 web:1811] 200 GET /getPostList (127.0.0.1) 10.11ms
+[I 141129 05:58:48 web:1811] 304 GET / (127.0.0.1) 14.03ms
+[I 141129 05:58:50 web:1811] 304 GET /getPostList (127.0.0.1) 9.01ms
+[I 141129 05:58:52 web:1811] 304 GET / (127.0.0.1) 18.25ms
+[I 141129 05:58:53 web:1811] 304 GET /getPostList (127.0.0.1) 8.04ms
+[I 141129 05:59:04 web:1811] 304 GET / (127.0.0.1) 15.02ms
+[I 141129 06:02:41 web:1811] 200 GET /getPostList (127.0.0.1) 9.02ms
+[W 141129 06:02:43 web:1404] 400 GET /post/547172d25704e40ce0c1a33f (127.0.0.1): Missing argument imgurl
+[W 141129 06:02:43 web:1811] 400 GET /post/547172d25704e40ce0c1a33f (127.0.0.1) 4.23ms
+[W 141129 06:02:48 web:1404] 400 GET /post/547070975704e40ce0c1a33b (127.0.0.1): Missing argument imgurl
+[W 141129 06:02:48 web:1811] 400 GET /post/547070975704e40ce0c1a33b (127.0.0.1) 1.95ms
+[W 141129 06:02:59 web:1404] 400 GET /post/547172d25704e40ce0c1a33f (127.0.0.1): Missing argument imgurl
+[W 141129 06:02:59 web:1811] 400 GET /post/547172d25704e40ce0c1a33f (127.0.0.1) 1.88ms
+[W 141129 06:03:46 web:1404] 400 GET /post/547172d25704e40ce0c1a33f (127.0.0.1): Missing argument imgurl
+[W 141129 06:03:46 web:1811] 400 GET /post/547172d25704e40ce0c1a33f (127.0.0.1) 2.30ms
+[I 141129 06:04:20 web:1811] 304 GET / (127.0.0.1) 12.58ms
+[I 141129 06:05:49 web:1811] 200 POST /createPost (127.0.0.1) 2.95ms
+[I 141129 06:05:51 web:1811] 200 POST /savePost (127.0.0.1) 1.82ms
+[I 141129 06:05:55 web:1811] 200 GET /getPostList (127.0.0.1) 8.72ms
+[W 141129 06:05:56 web:1404] 400 GET /post/5479623f5704e42a236fd2bf (127.0.0.1): Missing argument imgurl
+[W 141129 06:05:56 web:1811] 400 GET /post/5479623f5704e42a236fd2bf (127.0.0.1) 3.58ms
+[I 141129 06:10:12 web:1811] 200 GET /getPostList (127.0.0.1) 7.61ms
+[I 141129 06:10:13 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.39ms
+[I 141129 06:10:13 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.09ms
+[I 141129 06:10:13 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 1.52ms
+[I 141129 06:10:22 web:1811] 200 GET / (127.0.0.1) 12.62ms
+[I 141129 06:10:22 web:1811] 200 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.64ms
+[I 141129 06:10:22 web:1811] 200 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 1.54ms
+[I 141129 06:10:22 web:1811] 200 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.14ms
+[I 141129 06:14:20 web:1811] 304 GET / (127.0.0.1) 12.26ms
+[I 141129 06:14:21 web:1811] 200 GET /getPostList (127.0.0.1) 10.44ms
+[I 141129 06:14:23 web:1811] 304 GET / (127.0.0.1) 14.07ms
+[I 141129 06:16:25 web:1811] 200 POST /createPost (127.0.0.1) 4.45ms
+[I 141129 06:16:27 web:1811] 200 POST /savePost (127.0.0.1) 2.22ms
+[I 141129 06:16:31 web:1811] 200 GET /getPostList (127.0.0.1) 12.72ms
+[W 141129 06:16:33 web:1404] 400 GET /post/5479623f5704e42a236fd2bf (127.0.0.1): Missing argument imgurl
+[W 141129 06:16:33 web:1811] 400 GET /post/5479623f5704e42a236fd2bf (127.0.0.1) 4.67ms
+[W 141129 06:17:45 web:1404] 400 GET /post/547964bb5704e42a236fd2c0 (127.0.0.1): Missing argument imgurl
+[W 141129 06:17:45 web:1811] 400 GET /post/547964bb5704e42a236fd2c0 (127.0.0.1) 2.31ms
+[I 141129 06:17:51 web:1811] 304 GET / (127.0.0.1) 13.68ms
+[I 141129 06:29:17 web:1811] 200 POST /createPost (127.0.0.1) 4.82ms
+[I 141129 06:29:19 web:1811] 200 POST /savePost (127.0.0.1) 1.24ms
+[I 141129 06:56:32 web:1811] 200 GET /getPostList (127.0.0.1) 11.30ms
+[W 141129 06:56:34 web:1404] 400 GET /post/547967bf5704e42a236fd2c1 (127.0.0.1): Missing argument imgurl
+[W 141129 06:56:34 web:1811] 400 GET /post/547967bf5704e42a236fd2c1 (127.0.0.1) 4.31ms
+[I 141129 06:58:31 autoreload:191] /ROOT/server/iGudoo/controllers/CreatePost.py modified; restarting server
+[I 141129 06:58:33 web:1811] 200 GET /post/547967bf5704e42a236fd2c1 (127.0.0.1) 18.95ms
+[I 141129 06:58:34 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 10.36ms
+[I 141129 06:58:34 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 1.11ms
+[I 141129 06:58:34 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 1.25ms
+[I 141129 06:58:39 web:1811] 304 GET / (127.0.0.1) 13.26ms
+[I 141129 06:58:40 web:1811] 304 GET /getPostList (127.0.0.1) 11.29ms
+[I 141129 06:58:41 web:1811] 200 GET /post/547964bb5704e42a236fd2c0 (127.0.0.1) 12.66ms
+[I 141129 06:58:43 web:1811] 304 GET / (127.0.0.1) 13.03ms
+[I 141129 06:58:46 web:1811] 304 GET /getPostList (127.0.0.1) 7.71ms
+[I 141129 07:02:51 web:1811] 304 GET /post/547967bf5704e42a236fd2c1 (127.0.0.1) 14.51ms
+[W 141129 07:02:54 web:1404] 400 POST /alterExistPost (127.0.0.1): Missing argument imgurl
+[W 141129 07:02:54 web:1811] 400 POST /alterExistPost (127.0.0.1) 2.44ms
+[W 141129 07:02:55 web:1404] 400 POST /alterExistPost (127.0.0.1): Missing argument imgurl
+[W 141129 07:02:55 web:1811] 400 POST /alterExistPost (127.0.0.1) 1.46ms
+[W 141129 07:02:56 web:1404] 400 POST /alterExistPost (127.0.0.1): Missing argument imgurl
+[W 141129 07:02:56 web:1811] 400 POST /alterExistPost (127.0.0.1) 1.87ms
+[W 141129 07:02:56 web:1404] 400 POST /alterExistPost (127.0.0.1): Missing argument imgurl
+[W 141129 07:02:56 web:1811] 400 POST /alterExistPost (127.0.0.1) 1.95ms
+[W 141129 07:02:57 web:1404] 400 POST /alterExistPost (127.0.0.1): Missing argument imgurl
+[W 141129 07:02:57 web:1811] 400 POST /alterExistPost (127.0.0.1) 1.42ms
+[W 141129 07:02:57 web:1404] 400 POST /alterExistPost (127.0.0.1): Missing argument imgurl
+[W 141129 07:02:57 web:1811] 400 POST /alterExistPost (127.0.0.1) 1.84ms
+[W 141129 07:03:00 web:1404] 400 POST /alterExistPost (127.0.0.1): Missing argument imgurl
+[W 141129 07:03:00 web:1811] 400 POST /alterExistPost (127.0.0.1) 3.47ms
+[W 141129 07:05:20 web:1404] 400 POST /alterExistPost (127.0.0.1): Missing argument imgurl
+[W 141129 07:05:20 web:1811] 400 POST /alterExistPost (127.0.0.1) 1.82ms
+[I 141129 07:05:22 web:1811] 304 GET / (127.0.0.1) 17.88ms
+[I 141129 07:05:23 web:1811] 304 GET /getPostList (127.0.0.1) 10.48ms
+[I 141129 07:05:24 web:1811] 304 GET /post/547964bb5704e42a236fd2c0 (127.0.0.1) 9.32ms
+[I 141129 07:07:04 autoreload:191] /ROOT/server/iGudoo/controllers/CreatePost.py modified; restarting server
+Traceback (most recent call last):
+  File "application.py", line 13, in <module>
+    import CreatePost
+  File "/ROOT/server/iGudoo/controllers/CreatePost.py", line 94
+    postimgurl = viewpostinfo["imgurl"]
+    ^
+IndentationError: unexpected indent
+[I 141129 07:08:54 web:1811] 200 GET /getPostList (127.0.0.1) 13.82ms
+[I 141129 07:08:54 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (127.0.0.1) 8.40ms
+[I 141129 07:08:54 web:1811] 304 GET /static/css/style.css?v=0daf68d104ee06b4fbae12f197a9a29b (127.0.0.1) 0.85ms
+[I 141129 07:08:54 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (127.0.0.1) 1.47ms
+[I 141129 07:08:58 web:1811] 304 GET /post/547967bf5704e42a236fd2c1 (127.0.0.1) 13.36ms
+[I 141129 07:09:04 web:1811] 304 GET /getPostList (127.0.0.1) 9.50ms
+[I 141129 07:09:06 web:1811] 304 GET /post/547964bb5704e42a236fd2c0 (127.0.0.1) 11.32ms
+[I 141129 07:09:08 web:1811] 304 GET /getPostList (127.0.0.1) 12.36ms
+[I 141129 07:09:09 web:1811] 200 GET /post/5479623f5704e42a236fd2bf (127.0.0.1) 11.02ms
+[I 141129 07:09:11 web:1811] 304 GET /getPostList (127.0.0.1) 8.66ms
+[I 141129 07:09:27 web:1811] 304 GET / (127.0.0.1) 18.22ms
+[I 141129 07:09:31 web:1811] 200 POST /createPost (127.0.0.1) 2.14ms
+[I 141129 07:09:33 web:1811] 304 GET / (127.0.0.1) 14.09ms
