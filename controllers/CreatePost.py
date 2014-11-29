@@ -106,7 +106,7 @@ class AlterPostHandler(CreatePostHandler):
 	title = postData["title"]
 	postinfo = postData["postinfo"]
 	shortcut = postData["shortcut"]
-	imgurl = self.get_argument('imgurl')
+	imgurl = postData["imgurl"]
 	self.render("alterpost.html",title=title,postinfo=postinfo,shortcut=shortcut,imgurl=imgurl,userName=name)
 
 class AlterExistPostHandler(ViewPostHandler):
@@ -118,7 +118,7 @@ class AlterExistPostHandler(ViewPostHandler):
         title = viewpostinfo["title"]
         postinfo = viewpostinfo["postinfo"]
         shortcut = viewpostinfo["shortcut"]
-	imgurl = self.get_argument('imgurl')
+	imgurl = viewpostinfo["imgurl"]
         self.render("alterexistpost.html",postid=postid,title=title,postinfo=postinfo,shortcut=shortcut,imgurl=imgurl,userName=name)
 
 class DelPostHandler(ViewPostHandler):
