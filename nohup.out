@@ -310,3 +310,54 @@
 [I 141130 03:10:53 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.69ms
 [I 141130 03:10:53 web:1811] 304 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.54ms
 [I 141130 03:10:53 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.73ms
+[I 141130 12:30:08 web:1811] 200 GET / (10.10.65.73) 34.91ms
+[I 141130 14:31:53 web:1811] 200 GET / (10.10.65.73) 25.01ms
+[I 141130 14:31:54 web:1811] 200 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 2.00ms
+[I 141130 14:31:54 web:1811] 200 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.94ms
+[I 141130 14:31:54 web:1811] 200 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.19ms
+[E 141130 14:31:59 web:1407] Uncaught exception GET /getPostList (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/getPostList', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': 'bdshare_firstime=1417015806579; user="2|1:0|10:1416995410|4:user|8:YWRtaW4=|436bdd3fa1b021d8a2cfea492c53607a9cdb5d3a2fc373ebbf31202cf4d6689b"', 'Referer': 'http://10.10.65.68:8824/'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 2607, in wrapper
+        return method(self, *args, **kwargs)
+      File "/ROOT/server/iGodoo/controllers/CreatePost.py", line 136, in get
+        post=[i["title"],i["shortcut"],i["createDate"],i["_id"]]
+    KeyError: 'title'
+[E 141130 14:31:59 web:1811] 500 GET /getPostList (10.10.65.73) 8.37ms
+[E 141130 14:32:14 web:1407] Uncaught exception GET /getPostList (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/getPostList', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-cn', 'Accept-Encoding': 'gzip, deflate', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25', 'Dnt': '1', 'Connection': 'keep-alive', 'Cookie': 'bdshare_firstime=1417015806579; user="2|1:0|10:1416995410|4:user|8:YWRtaW4=|436bdd3fa1b021d8a2cfea492c53607a9cdb5d3a2fc373ebbf31202cf4d6689b"', 'Referer': 'http://10.10.65.68:8824/'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 2607, in wrapper
+        return method(self, *args, **kwargs)
+      File "/ROOT/server/iGodoo/controllers/CreatePost.py", line 136, in get
+        post=[i["title"],i["shortcut"],i["createDate"],i["_id"]]
+    KeyError: 'title'
+[E 141130 14:32:14 web:1811] 500 GET /getPostList (10.10.65.73) 4.16ms
+[I 141130 14:50:15 web:1811] 200 GET / (10.10.65.73) 13.97ms
+[I 141130 14:50:15 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.39ms
+[I 141130 14:50:15 web:1811] 304 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.02ms
+[I 141130 14:50:15 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.03ms
+[I 141130 14:50:18 web:1811] 200 GET /getPostList (10.10.65.73) 7.47ms
+[I 141130 14:50:23 web:1811] 304 GET / (10.10.65.73) 24.06ms
+[I 141202 23:38:14 web:1811] 200 GET / (10.10.65.73) 26.44ms
+[I 141203 12:44:24 web:1811] 200 GET / (10.10.65.73) 24.61ms
+[W 141203 12:44:24 web:1811] 404 GET /favicon.ico (10.10.65.73) 3.83ms
+[I 141203 12:44:25 web:1811] 200 GET / (10.10.65.73) 24.72ms
+[W 141203 12:44:25 web:1811] 404 GET /apple-touch-icon-precomposed.png (10.10.65.73) 2.40ms
+[W 141203 12:44:25 web:1811] 404 GET /apple-touch-icon.png (10.10.65.73) 1.83ms
+[I 141204 17:27:15 web:1811] 200 GET / (10.10.65.73) 25.04ms
+[I 141204 17:27:15 web:1811] 200 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.88ms
+[I 141204 17:27:15 web:1811] 200 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.18ms
+[I 141204 17:27:15 web:1811] 200 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.78ms
+[I 141204 19:04:42 web:1811] 200 GET / (10.10.65.73) 25.24ms
+[I 141204 19:04:42 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.62ms
+[I 141204 19:04:42 web:1811] 304 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.59ms
+[I 141204 19:04:42 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.56ms
+[W 141204 19:04:43 web:1811] 404 GET /favicon.ico (10.10.65.73) 3.83ms
+[I 141204 19:04:51 web:1811] 200 POST /createPost (10.10.65.73) 3.83ms
+[I 141204 19:04:53 web:1811] 200 POST /alterPost (10.10.65.73) 4.46ms
+[I 141204 19:05:01 web:1811] 304 GET / (10.10.65.73) 24.35ms
