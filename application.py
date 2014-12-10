@@ -10,7 +10,7 @@ import tornado.web
 import Home
 import Login
 import User
-import CreatePost
+import CreatePosts
 
 from tornado.options import define, options
 define("port", default = 8824, help = "run on the given port", type = int)
@@ -29,17 +29,17 @@ if __name__ == '__main__':
         app=tornado.web.Application(
                 handlers=[
                         (r'/',Home.IndexHandler),
-                        (r'/login',Login.LoginHandler),
-                        (r'/user',User.IndexHandler),
-                        (r'/createPost',CreatePost.CreatePostHandler),
-                        (r'/createExistPost',CreatePost.CreateExistPostHandler),
-                        (r'/savePost',CreatePost.SavePostHandler),
-                        (r'/saveExistPost',CreatePost.SaveExistPostHandler),
-                        (r'/alterPost',CreatePost.AlterPostHandler),
-                        (r'/alterExistPost',CreatePost.AlterExistPostHandler),
-                        (r'/delPost',CreatePost.DelPostHandler),
-                        (r'/getPostList',CreatePost.ListPostHandler),
-                        (r'/post/(.*)',CreatePost.ViewPostHandler),
+#                        (r'/login',Login.LoginHandler),
+#                        (r'/user',User.IndexHandler),
+                        (r'/createPosts',CreatePosts.CreatePostHandler),
+#                        (r'/createExistPost',CreatePost.CreateExistPostHandler),
+                        (r'/savePost',CreatePosts.SavePostHandler),
+#                        (r'/saveExistPost',CreatePost.SaveExistPostHandler),
+                        (r'/alterPost',CreatePosts.AlterPostHandler),
+#                        (r'/alterExistPost',CreatePost.AlterExistPostHandler),
+#                        (r'/delPost',CreatePost.DelPostHandler),
+                        (r'/getPostList',CreatePosts.ListPostHandler),
+                        (r'/post/(.*)',CreatePosts.ViewPostHandler),
                       #  (r'/f/(.*)',Home.TopHandler),
                        # (r'/new/(.*)',Home.NewHandler)
             ],**settings

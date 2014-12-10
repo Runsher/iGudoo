@@ -1,0 +1,139 @@
+<h5>文章修改</h5>
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color=#987cb9 SIZE=3>
+<h4>标题</h4>
+<div class="row">
+    <div class="col-sm-6">
+        <input id="title" type=">text" class="form-control" placeholder="{{ postdata["title"] }}">
+    </div>
+    <div class="col-sm-6">
+        <input id="imgurl" type=">text" class="form-control" placeholder="{{ postdata["imgurl"] }}">
+    </div>
+</div>
+<h4>标签</h4>
+<div class="row tap">
+    <div class="col-sm-6">
+<div  class="col-sm-6 tap tap-chose">
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="原创"> 原创
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="转载"> 转载
+</label>
+</div>
+<div class="col-sm-6 tap tap-type">
+    <div class="col-sm-4 tap">
+<h5>内容分类:</h5>
+    </div>
+    <div class="col-sm-6 tap">
+<select id="choseSelect" class="form-control">
+  <option>文艺范</option>
+  <option>技术控</option>
+  <option>评论家</option>
+  <option>购物狂</option>
+  <option>游戏王</option>
+</select>
+</div>
+</div>
+</div>
+<div  class="col-sm-6 tap-type">
+  <div class="form-group">
+    <label for="username" class="writer col-sm-2 control-label">作者:</label>
+    <div class="col-sm-5">
+      <input type="text" class="form-control" id="writer" placeholder="{{ postdata["writer"]}}">
+    </div>
+  </div>
+</div>
+</div>
+<!--div class="sunote" id="summernote">Hello Summernote</div-->
+<div  id="summernote" class="sunote">{% raw postdata["sHTML"] %}</div>
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color=#987cb9 SIZE=3>
+<h4>简介</h4>
+<div class="row">
+<div class=col-sm-6>
+<textarea id="content"  name="content" class="form-control" rows="3"> {{ postdata["shortcut"] }}</textarea>
+</div>
+</div>
+
+<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=1)" width="100%" color=#987cb9 SIZE=3>
+<button id="createPost" type="button" class="btn btn-success">文章预览</button>
+<script>
+$('.sunote').summernote({
+  height: 300,                 // set editor height
+
+  minHeight: null,             // set minimum height of editor
+  maxHeight: null,             // set maximum height of editor
+
+  focus: true,                 // set focus to editable area after initializing summernote
+  toolbar: [
+    //[groupname, [button list]]
+
+    ['style', ['style','bold', 'italic', 'underline', 'clear']],
+    ['font', ['strikethrough']],
+    ['fontsize', ['fontsize']],
+    ['color', ['color']],
+    ['para', ['ul', 'ol', 'paragraph']],
+    ['height', ['height']],
+    ['insert',['picture','link','hr']],
+    ['misc',['fullscreen','codeview']],
+  ]
+});
+</script>
+<script>
+$(document).ready(function(){
+$("#createPost").click(function(){
+var title=$("#title").val();
+if(!title){
+var title=$("#title").attr("placeholder")
+}
+var writer = $("#writer").val();
+if(!writer){
+var writer = $("#writer").attr("placeholder")
+}
+var inline=$('input:radio[name="inlineRadioOptions"]:checked').val();
+var posttag=$('#choseSelect').children('option:selected').val();
+var sHTML = $("#summernote").code();
+var shortcut = $("#content").val();
+var imgurl = $("#imgurl").val();
+if(!imgurl){
+var imgurl = $("#imgurl").attr("placeholder")
+}
+var postdata = new Object();
+
+postdata.title=title,
+postdata.writer=writer,
+postdata.inline=inline,
+postdata.posttag=posttag,
+postdata.sHTML=sHTML,
+postdata.shortcut=shortcut,
+postdata.imgurl=imgurl
+var postdatajson = JSON.stringify(postdata);
+$.ajax({
+        type : "POST",
+        //dataType : "json",
+        url  : "/createPosts",
+        data : postdatajson,
+        error:function(XMLResponse){alert(XMLResponse.responseText)},
+        success:function(data){
+        $("#makePost").html(data);}
+})
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+var checkedVal = "{{ postdata["inline"] }}"; // or 2,3
+//var yourVal = "转载"; // or 2,3
+//alert(yourVal)
+$("input[name='inlineRadioOptions']").each(function(index) {
+    if ($("input[name='inlineRadioOptions']").get(index).value == checkedVal) {
+        $("input[name='inlineRadioOptions']").get(index).checked = true;
+    }
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+var selectedVal = "{{ postdata["posttag"] }}"; // or 2,3
+$("#choseSelect option:contains('评论家')").attr("selected", true)
+});
+</script>
