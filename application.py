@@ -13,7 +13,7 @@ import User
 import CreatePosts
 
 from tornado.options import define, options
-define("port", default = 8827, help = "run on the given port", type = int)
+define("port", default = 8824, help = "run on the given port", type = int)
 
 settings = {
         "cookie_secret" : "61oEyeqXQAGaYdkL5gEmGeJJFuYh7EQnp2XdTP1o/Vo=",

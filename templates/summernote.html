@@ -92,7 +92,7 @@ var writer = $("#writer").attr("placeholder")
 }
 var inline=$('input:radio[name="inlineRadioOptions"]:checked').val();
 var posttag=$('#choseSelect').children('option:selected').val();
-var sHTML = $("#summernote").code();
+var postinfo = $("#summernote").code();
 var shortcut = $("#content").val();
 if(!shortcut){
 var shortcut = '';
@@ -108,7 +108,7 @@ postdata.title=title,
 postdata.writer=writer,
 postdata.inline=inline,
 postdata.posttag=posttag,
-postdata.sHTML=sHTML,
+postdata.postinfo=postinfo,
 postdata.shortcut=shortcut,
 postdata.imgurl=imgurl
 var postdatajson = JSON.stringify(postdata);
@@ -121,7 +121,7 @@ $.ajax({
 	success:function(data){
 	$("#makePost").html(data);}
 })
-//$.post("/createPost",{title:title,inline1:inline1,sHTML:sHTML,shortcut:shortcut,imgurl:imgurl},function(res){
+//$.post("/createPost",{title:title,inline1:inline1,postinfo:postinfo,shortcut:shortcut,imgurl:imgurl},function(res){
 //$("#makePost").html(res);
 //});
 });

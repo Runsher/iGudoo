@@ -1909,3 +1909,102 @@ SyntaxError: invalid syntax
 [I 141211 10:48:03 web:1811] 304 GET / (10.10.65.73) 24.56ms
 [I 141211 10:48:04 web:1811] 304 GET /getPostList (10.10.65.73) 15.95ms
 [I 141211 10:48:05 web:1811] 304 GET / (10.10.65.73) 29.83ms
+Traceback (most recent call last):
+  File "application.py", line 49, in <module>
+    http_server.listen(options.port)
+  File "/usr/lib64/python2.6/site-packages/tornado/tcpserver.py", line 125, in listen
+    sockets = bind_sockets(port, address=address)
+  File "/usr/lib64/python2.6/site-packages/tornado/netutil.py", line 145, in bind_sockets
+    sock.bind(sockaddr)
+  File "<string>", line 1, in bind
+socket.error: [Errno 98] Address already in use
+[I 141211 17:57:58 web:1811] 304 GET / (10.10.65.73) 38.96ms
+[I 141211 17:57:58 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 3.70ms
+[I 141211 17:57:58 web:1811] 304 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.42ms
+[I 141211 17:57:58 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.73ms
+[I 141211 17:58:07 web:1811] 200 POST /createPosts (10.10.65.73) 5.02ms
+[E 141211 17:58:08 web:1407] Uncaught exception POST /alterPost (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='POST', uri='/alterPost', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Origin': 'http://10.10.65.68:8824', 'Content-Length': '0', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '10.10.65.68:8824', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://10.10.65.68:8824/', 'Cookie': 'bdshare_firstime=1416982564383; user="2|1:0|10:1417016769|4:user|8:YWRtaW4=|1e98f0fec863e3cc98552ed91beef7327f0919bce62eb01d1f9385d5e34a574c"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 2607, in wrapper
+        return method(self, *args, **kwargs)
+      File "/ROOT/server/iGodoo/controllers/CreatePosts.py", line 60, in post
+        self.render("alterpost.html",postdata=postdata)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "alterpost_html.generated.py", line 34, in _tt_execute
+        _tt_tmp = postdata['_id']  # alterpost.html:84
+    KeyError: '_id'
+[E 141211 17:58:08 web:1811] 500 POST /alterPost (10.10.65.73) 14.37ms
+[I 141211 18:16:05 web:1811] 304 GET / (10.10.65.73) 25.69ms
+[I 141211 18:16:09 web:1811] 200 POST /createPosts (10.10.65.73) 4.23ms
+[E 141211 18:16:10 web:1407] Uncaught exception POST /alterPost (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='POST', uri='/alterPost', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Origin': 'http://10.10.65.68:8824', 'Content-Length': '0', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '10.10.65.68:8824', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://10.10.65.68:8824/', 'Cookie': 'bdshare_firstime=1416982564383; user="2|1:0|10:1417016769|4:user|8:YWRtaW4=|1e98f0fec863e3cc98552ed91beef7327f0919bce62eb01d1f9385d5e34a574c"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 2607, in wrapper
+        return method(self, *args, **kwargs)
+      File "/ROOT/server/iGodoo/controllers/CreatePosts.py", line 60, in post
+        self.render("alterpost.html",postdata=postdata)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "alterpost_html.generated.py", line 36, in _tt_execute
+        _tt_tmp = postdata['_id']  # alterpost.html:85
+    KeyError: '_id'
+[E 141211 18:16:10 web:1811] 500 POST /alterPost (10.10.65.73) 10.14ms
+[E 141211 18:16:11 web:1407] Uncaught exception POST /alterPost (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='POST', uri='/alterPost', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Origin': 'http://10.10.65.68:8824', 'Content-Length': '0', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '10.10.65.68:8824', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://10.10.65.68:8824/', 'Cookie': 'bdshare_firstime=1416982564383; user="2|1:0|10:1417016769|4:user|8:YWRtaW4=|1e98f0fec863e3cc98552ed91beef7327f0919bce62eb01d1f9385d5e34a574c"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 2607, in wrapper
+        return method(self, *args, **kwargs)
+      File "/ROOT/server/iGodoo/controllers/CreatePosts.py", line 60, in post
+        self.render("alterpost.html",postdata=postdata)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "alterpost_html.generated.py", line 36, in _tt_execute
+        _tt_tmp = postdata['_id']  # alterpost.html:85
+    KeyError: '_id'
+[E 141211 18:16:11 web:1811] 500 POST /alterPost (10.10.65.73) 11.20ms
+[I 141211 18:17:25 web:1811] 304 GET / (10.10.65.73) 25.66ms
+[I 141211 18:17:29 web:1811] 200 POST /createPosts (10.10.65.73) 4.19ms
+[E 141211 18:17:30 web:1407] Uncaught exception POST /alterPost (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='POST', uri='/alterPost', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Origin': 'http://10.10.65.68:8824', 'Content-Length': '0', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '10.10.65.68:8824', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://10.10.65.68:8824/', 'Cookie': 'bdshare_firstime=1416982564383; user="2|1:0|10:1417016769|4:user|8:YWRtaW4=|1e98f0fec863e3cc98552ed91beef7327f0919bce62eb01d1f9385d5e34a574c"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 2607, in wrapper
+        return method(self, *args, **kwargs)
+      File "/ROOT/server/iGodoo/controllers/CreatePosts.py", line 60, in post
+        self.render("alterpost.html",postdata=postdata)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "alterpost_html.generated.py", line 36, in _tt_execute
+        _tt_tmp = postdata['_id']  # alterpost.html:85
+    KeyError: '_id'
+[E 141211 18:17:30 web:1811] 500 POST /alterPost (10.10.65.73) 10.07ms
+[I 141211 18:18:06 web:1811] 304 GET / (10.10.65.73) 26.81ms
+[I 141211 18:18:06 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.84ms
+[I 141211 18:18:06 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.13ms
+[I 141211 18:18:06 web:1811] 304 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.65ms
+[I 141211 18:18:08 web:1811] 304 GET / (10.10.65.73) 13.33ms
