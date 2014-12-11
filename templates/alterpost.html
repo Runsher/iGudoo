@@ -81,6 +81,7 @@ $('.sunote').summernote({
 <script>
 $(document).ready(function(){
 $("#createPost").click(function(){
+var _id = "{{ postdata['_id']}}";
 var title=$("#title").val();
 if(!title){
 var title=$("#title").attr("placeholder")
@@ -98,7 +99,7 @@ if(!imgurl){
 var imgurl = $("#imgurl").attr("placeholder")
 }
 var postdata = new Object();
-
+postdata._id=_id,
 postdata.title=title,
 postdata.writer=writer,
 postdata.inline=inline,
@@ -134,6 +135,7 @@ $("input[name='inlineRadioOptions']").each(function(index) {
 <script>
 $(document).ready(function(){
 var selectedVal = "{{ postdata["posttag"] }}"; // or 2,3
-$("#choseSelect option:contains('评论家')").attr("selected", true)
+//$("#choseSelect option:contains('评论家')").attr("selected", true)
+$("#choseSelect option:contains('{{ postdata["posttag"] }}')").attr("selected", true)
 });
 </script>

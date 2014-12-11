@@ -23,7 +23,18 @@ $("#alterpostfile").html(res)
 });
 });
 $("#deletepost").click(function(){
+{% if not postdata.has_key('_id') %}
+var _id=0
+{% else %}
+var _id=1
+{% end %}
+if(_id==0){
 window.location.href="/"
+}else{
+$.post("/delPost",function(){
+$("#result").html("文章删除成功!")
+});
+}
 });
 });
 </script>

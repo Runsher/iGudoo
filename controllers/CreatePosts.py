@@ -20,15 +20,21 @@ class BaseHandler(tornado.web.RequestHandler):
 
 	def savepost(self,postDataInfo):
 		postDataInfo['createDate'] = datetime.datetime.now()
-		#if !postDataInfo['_id']:
-		#....
+		postDataInfo['status'] = 1
         	posts.insert(postDataInfo)
         	dbconn.close()
 
 	def updatepost(self,postDataInfo):
-		posts.update({"_id":postDataInfo['_id']},{"$set":postDataInfo})
+		update_id = postDataInfo['_id']
+		del postDataInfo['_id']
+		postDataInfo['createDate'] = datetime.datetime.now()
+		posts.update({"_id":update_id},{"$set":postDataInfo},True)
         	dbconn.close()
 
+	def delpost(self,postDataInfo):
+		del_id = postDataInfo['_id']
+		posts.update({"_id":del_id},{"$set":{'status':0}},True)
+	
 class CreatePostHandler(BaseHandler):
     	@tornado.web.authenticated
 	def get(self):
@@ -42,18 +48,30 @@ class CreatePostHandler(BaseHandler):
 class SavePostHandler(BaseHandler):
 	@tornado.web.authenticated
 	def post(self):
-       	 	BaseHandler.savepost(self,postdata)
+		if postdata.has_key("_id"):
+			postdata['_id'] = ObjectId(postdata['_id'])
+			BaseHandler.updatepost(self,postdata)
+		else:
+       	 		BaseHandler.savepost(self,postdata)
 
 class AlterPostHandler(BaseHandler):
 	@tornado.web.authenticated
 	def post(self):
 		self.render("alterpost.html",postdata=postdata)
 
+class DelPostHandler(BaseHandler):
+	@tornado.web.authenticated
+	def post(self):
+		if postdata.has_key("_id"):
+            		BaseHandler.delpost(self,postdata)
+		else:
+			pass;
+
 class ListPostHandler(BaseHandler):
     	@tornado.web.authenticated
     	def get(self):
         	name = tornado.escape.xhtml_escape(self.current_user)
-        	postsList = posts.find().sort("createDate",-1)
+        	postsList = posts.find({'status':1}).sort("createDate",-1)
         	dbconn.close()
         	self.render("postslist.html",listposts=postsList,userName=name)
 
