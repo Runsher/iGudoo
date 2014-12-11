@@ -81,7 +81,11 @@ $('.sunote').summernote({
 <script>
 $(document).ready(function(){
 $("#createPost").click(function(){
+{% if not postdata.has_key('_id') %}
+var _id=null;
+{% else %}
 var _id = "{{ postdata['_id']}}";
+{% end %}
 var title=$("#title").val();
 if(!title){
 var title=$("#title").attr("placeholder")

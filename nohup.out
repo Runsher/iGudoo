@@ -2008,3 +2008,101 @@ socket.error: [Errno 98] Address already in use
 [I 141211 18:18:06 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 2.13ms
 [I 141211 18:18:06 web:1811] 304 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.65ms
 [I 141211 18:18:08 web:1811] 304 GET / (10.10.65.73) 13.33ms
+[I 141211 20:35:51 web:1811] 200 GET / (10.10.65.73) 25.54ms
+[I 141211 20:35:51 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.89ms
+[I 141211 20:35:51 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.41ms
+[I 141211 20:35:51 web:1811] 304 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.46ms
+[I 141211 20:36:09 web:1811] 304 GET /getPostList (10.10.65.73) 15.79ms
+[E 141211 20:36:11 web:1407] Uncaught exception GET /post/54890571d8aadf3fb69df4a5 (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='GET', uri='/post/54890571d8aadf3fb69df4a5', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Host': '10.10.65.68:8824', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://10.10.65.68:8824/getPostList', 'Cookie': 'bdshare_firstime=1416982564383; user="2|1:0|10:1417016769|4:user|8:YWRtaW4=|1e98f0fec863e3cc98552ed91beef7327f0919bce62eb01d1f9385d5e34a574c"', 'If-None-Match': '"99f4f0aab772c7ca255e19fa082884516c3e6d51"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 2607, in wrapper
+        return method(self, *args, **kwargs)
+      File "/ROOT/server/iGodoo/controllers/CreatePosts.py", line 86, in get
+        self.render("viewpost.html",postdata=postdata,userName=name)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "viewpost_html.generated.py", line 47, in _tt_execute
+        _tt_tmp = postdata["postinfo"]  # prelook.html:11 (via viewpost.html:9)
+    KeyError: 'postinfo'
+[E 141211 20:36:11 web:1811] 500 GET /post/54890571d8aadf3fb69df4a5 (10.10.65.73) 19.85ms
+[I 141211 20:36:31 web:1811] 200 GET /getPostList (10.10.65.73) 17.56ms
+[I 141211 20:36:31 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.59ms
+[I 141211 20:36:31 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.76ms
+[I 141211 20:36:31 web:1811] 304 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.40ms
+[I 141211 20:36:33 web:1811] 304 GET / (10.10.65.73) 24.69ms
+[I 141211 20:37:54 web:1811] 200 POST /createPosts (10.10.65.73) 2.39ms
+[E 141211 20:37:56 web:1407] Uncaught exception POST /alterPost (10.10.65.73)
+    HTTPServerRequest(protocol='http', host='10.10.65.68:8824', method='POST', uri='/alterPost', version='HTTP/1.1', remote_ip='10.10.65.73', headers={'Origin': 'http://10.10.65.68:8824', 'Content-Length': '0', 'Accept-Language': 'zh-CN,zh;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Host': '10.10.65.68:8824', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://10.10.65.68:8824/', 'Cookie': 'bdshare_firstime=1416982564383; user="2|1:0|10:1417016769|4:user|8:YWRtaW4=|1e98f0fec863e3cc98552ed91beef7327f0919bce62eb01d1f9385d5e34a574c"'})
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 1332, in _execute
+        result = method(*self.path_args, **self.path_kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 2607, in wrapper
+        return method(self, *args, **kwargs)
+      File "/ROOT/server/iGodoo/controllers/CreatePosts.py", line 60, in post
+        self.render("alterpost.html",postdata=postdata)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 665, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/usr/lib64/python2.6/site-packages/tornado/web.py", line 772, in render_string
+        return t.generate(**namespace)
+      File "/usr/lib64/python2.6/site-packages/tornado/template.py", line 278, in generate
+        return execute()
+      File "alterpost_html.generated.py", line 34, in _tt_execute
+        _tt_tmp = postdata['_id']  # alterpost.html:84
+    KeyError: '_id'
+[E 141211 20:37:56 web:1811] 500 POST /alterPost (10.10.65.73) 9.78ms
+[I 141211 20:41:21 web:1811] 304 GET / (10.10.65.73) 26.34ms
+[I 141211 20:41:21 web:1811] 304 GET /static/css/summernote.css?v=b885d00814df25ff20859994d1053500 (10.10.65.73) 1.70ms
+[I 141211 20:41:21 web:1811] 304 GET /static/css/style.css?v=d10dadcbf5ca2094a663527d00a431f8 (10.10.65.73) 1.41ms
+[I 141211 20:41:21 web:1811] 304 GET /static/js/summernote.min.js?v=883a18c0ef36aed45a20320324251293 (10.10.65.73) 1.71ms
+[I 141211 20:41:28 web:1811] 200 POST /createPosts (10.10.65.73) 4.45ms
+[I 141211 20:41:29 web:1811] 200 POST /alterPost (10.10.65.73) 7.14ms
+[I 141211 20:41:38 web:1811] 200 POST /createPosts (10.10.65.73) 4.40ms
+[I 141211 20:41:40 web:1811] 200 POST /savePost (10.10.65.73) 1.89ms
+[I 141211 20:41:42 web:1811] 304 GET /getPostList (10.10.65.73) 15.31ms
+[I 141211 20:41:43 web:1811] 304 GET /getPostList (10.10.65.73) 21.58ms
+[I 141211 20:41:57 web:1811] 304 GET / (10.10.65.73) 24.66ms
+[I 141211 20:41:58 web:1811] 304 GET /getPostList (10.10.65.73) 15.65ms
+[I 141211 20:42:00 web:1811] 304 GET / (10.10.65.73) 25.75ms
+[I 141211 20:42:04 web:1811] 200 POST /createPosts (10.10.65.73) 6.80ms
+[I 141211 20:42:05 web:1811] 200 POST /savePost (10.10.65.73) 1.70ms
+[I 141211 20:42:06 web:1811] 200 GET /getPostList (10.10.65.73) 15.89ms
+[I 141211 20:42:08 web:1811] 200 GET /post/5489911dd8aadf2c78bc9a7d (10.10.65.73) 15.58ms
+[I 141211 20:42:09 web:1811] 200 POST /delPost (10.10.65.73) 3.57ms
+[I 141211 20:42:11 web:1811] 200 GET /getPostList (10.10.65.73) 9.01ms
+[I 141211 20:42:12 web:1811] 304 GET / (10.10.65.73) 29.41ms
+[I 141211 20:42:16 web:1811] 200 POST /createPosts (10.10.65.73) 4.34ms
+[I 141211 20:42:18 web:1811] 200 POST /alterPost (10.10.65.73) 6.61ms
+[I 141211 20:42:22 web:1811] 200 POST /createPosts (10.10.65.73) 4.34ms
+[I 141211 20:42:24 web:1811] 200 POST /savePost (10.10.65.73) 2.75ms
+[I 141211 20:42:25 web:1811] 304 GET /getPostList (10.10.65.73) 17.14ms
+[I 141211 20:43:51 web:1811] 304 GET /getPostList (10.10.65.73) 12.24ms
+[I 141211 20:44:55 autoreload:191] /ROOT/server/iGodoo/controllers/CreatePosts.py modified; restarting server
+[I 141211 20:44:56 web:1811] 304 GET / (10.10.65.73) 41.50ms
+[I 141211 20:45:01 web:1811] 200 POST /createPosts (10.10.65.73) 4.56ms
+[I 141211 20:45:02 web:1811] 200 POST /alterPost (10.10.65.73) 7.00ms
+[I 141211 20:45:04 web:1811] 200 POST /createPosts (10.10.65.73) 4.38ms
+[I 141211 20:45:06 web:1811] 200 POST /savePost (10.10.65.73) 1.89ms
+[I 141211 20:45:07 web:1811] 200 GET /getPostList (10.10.65.73) 16.08ms
+[I 141211 20:45:31 web:1811] 304 GET / (10.10.65.73) 25.48ms
+[I 141211 20:45:35 web:1811] 200 POST /createPosts (10.10.65.73) 4.23ms
+[I 141211 20:45:36 web:1811] 200 POST /alterPost (10.10.65.73) 7.45ms
+[I 141211 20:45:38 web:1811] 200 POST /createPosts (10.10.65.73) 4.52ms
+[I 141211 20:45:39 web:1811] 200 POST /savePost (10.10.65.73) 1.74ms
+[I 141211 20:45:41 web:1811] 200 GET /getPostList (10.10.65.73) 16.09ms
+[I 141211 20:46:05 web:1811] 200 GET /post/548991f3d8aadf2c7853a6a4 (10.10.65.73) 16.20ms
+[I 141211 20:46:06 web:1811] 200 POST /alterPost (10.10.65.73) 5.41ms
+[I 141211 20:46:11 web:1811] 200 POST /createPosts (10.10.65.73) 5.03ms
+[I 141211 20:46:12 web:1811] 200 POST /savePost (10.10.65.73) 3.30ms
+[I 141211 20:46:14 web:1811] 200 GET /getPostList (10.10.65.73) 15.47ms
+[I 141211 20:46:15 web:1811] 200 GET /post/548991f3d8aadf2c7853a6a4 (10.10.65.73) 15.42ms
+[I 141211 20:46:17 web:1811] 200 POST /delPost (10.10.65.73) 3.66ms
+[I 141211 20:46:19 web:1811] 200 GET /getPostList (10.10.65.73) 15.66ms
+[I 141211 20:46:46 web:1811] 304 GET /getPostList (10.10.65.73) 15.76ms
+[I 141211 20:46:47 web:1811] 304 GET / (10.10.65.73) 25.17ms

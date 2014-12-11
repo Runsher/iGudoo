@@ -28,6 +28,7 @@ class BaseHandler(tornado.web.RequestHandler):
 		update_id = postDataInfo['_id']
 		del postDataInfo['_id']
 		postDataInfo['createDate'] = datetime.datetime.now()
+		postDataInfo['status'] = 1
 		posts.update({"_id":update_id},{"$set":postDataInfo},True)
         	dbconn.close()
 
